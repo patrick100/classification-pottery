@@ -1,0 +1,2090 @@
+python train_mvcnn.py -name mvcnn -num_models 1000 -weight_decay 0.001 -num_views 12 -cnn_name vgg11
+pretraining:  True
+WARNING: summary folder already exists!! It will be overwritten!!
+SVCNN(
+  (net_1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): ReLU(inplace=True)
+    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (7): ReLU(inplace=True)
+    (8): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (9): ReLU(inplace=True)
+    (10): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (11): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (12): ReLU(inplace=True)
+    (13): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (14): ReLU(inplace=True)
+    (15): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (16): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (17): ReLU(inplace=True)
+    (18): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (19): ReLU(inplace=True)
+    (20): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (net_2): Sequential(
+    (0): Linear(in_features=25088, out_features=4096, bias=True)
+    (1): ReLU(inplace=True)
+    (2): Dropout(p=0.5, inplace=False)
+    (3): Linear(in_features=4096, out_features=4096, bias=True)
+    (4): ReLU(inplace=True)
+    (5): Dropout(p=0.5, inplace=False)
+    (6): Linear(in_features=4096, out_features=11, bias=True)
+  )
+)
+WARNING: summary folder already exists!! It will be overwritten!!
+num_train_files: 3456
+num_val_files: 1476
+num_views 12
+epoch 1, step 1: train_loss 2.54713; train_acc 0.25000
+epoch 1, step 2: train_loss 2.65377; train_acc 0.12500
+epoch 1, step 3: train_loss 3.00274; train_acc 0.25000
+epoch 1, step 4: train_loss 3.39637; train_acc 0.00000
+epoch 1, step 5: train_loss 1.69773; train_acc 0.87500
+epoch 1, step 6: train_loss 2.72411; train_acc 0.00000
+epoch 1, step 7: train_loss 2.45397; train_acc 0.12500
+epoch 1, step 8: train_loss 2.22537; train_acc 0.25000
+epoch 1, step 9: train_loss 2.13820; train_acc 0.37500
+epoch 1, step 10: train_loss 2.05230; train_acc 0.37500
+epoch 1, step 11: train_loss 2.75512; train_acc 0.12500
+epoch 1, step 12: train_loss 3.27929; train_acc 0.12500
+epoch 1, step 13: train_loss 1.88446; train_acc 0.37500
+epoch 1, step 14: train_loss 1.76594; train_acc 0.50000
+epoch 1, step 15: train_loss 2.50871; train_acc 0.25000
+epoch 1, step 16: train_loss 1.69598; train_acc 0.37500
+epoch 1, step 17: train_loss 1.95187; train_acc 0.37500
+epoch 1, step 18: train_loss 2.11794; train_acc 0.25000
+epoch 1, step 19: train_loss 2.13961; train_acc 0.37500
+epoch 1, step 20: train_loss 1.73897; train_acc 0.25000
+epoch 1, step 21: train_loss 1.83953; train_acc 0.37500
+epoch 1, step 22: train_loss 1.96734; train_acc 0.37500
+epoch 1, step 23: train_loss 2.08645; train_acc 0.25000
+epoch 1, step 24: train_loss 2.22832; train_acc 0.12500
+epoch 1, step 25: train_loss 2.01376; train_acc 0.37500
+epoch 1, step 26: train_loss 1.75908; train_acc 0.50000
+epoch 1, step 27: train_loss 2.17193; train_acc 0.37500
+epoch 1, step 28: train_loss 2.02451; train_acc 0.37500
+epoch 1, step 29: train_loss 1.77624; train_acc 0.37500
+epoch 1, step 30: train_loss 1.72336; train_acc 0.50000
+epoch 1, step 31: train_loss 2.09034; train_acc 0.50000
+epoch 1, step 32: train_loss 2.21006; train_acc 0.37500
+epoch 1, step 33: train_loss 1.84188; train_acc 0.37500
+epoch 1, step 34: train_loss 2.09497; train_acc 0.37500
+epoch 1, step 35: train_loss 1.93905; train_acc 0.50000
+epoch 1, step 36: train_loss 2.16719; train_acc 0.37500
+Total # of test models:  123
+val mean class acc. :  0.2582288401253919
+val overall acc. :  0.47154468
+val loss :  1.7029326856136322
+num_views 12
+epoch 2, step 1: train_loss 1.77523; train_acc 0.50000
+epoch 2, step 2: train_loss 1.81910; train_acc 0.50000
+epoch 2, step 3: train_loss 1.31999; train_acc 0.62500
+epoch 2, step 4: train_loss 1.53187; train_acc 0.62500
+epoch 2, step 5: train_loss 1.77322; train_acc 0.50000
+epoch 2, step 6: train_loss 1.66050; train_acc 0.50000
+epoch 2, step 7: train_loss 1.92596; train_acc 0.37500
+epoch 2, step 8: train_loss 2.15914; train_acc 0.37500
+epoch 2, step 9: train_loss 1.57406; train_acc 0.62500
+epoch 2, step 10: train_loss 1.43063; train_acc 0.62500
+epoch 2, step 11: train_loss 1.74704; train_acc 0.50000
+epoch 2, step 12: train_loss 1.97499; train_acc 0.12500
+epoch 2, step 13: train_loss 1.07823; train_acc 0.75000
+epoch 2, step 14: train_loss 1.69382; train_acc 0.50000
+epoch 2, step 15: train_loss 1.50791; train_acc 0.50000
+epoch 2, step 16: train_loss 1.73738; train_acc 0.50000
+epoch 2, step 17: train_loss 2.00265; train_acc 0.25000
+epoch 2, step 18: train_loss 1.55656; train_acc 0.50000
+epoch 2, step 19: train_loss 1.38246; train_acc 0.62500
+epoch 2, step 20: train_loss 1.09407; train_acc 0.75000
+epoch 2, step 21: train_loss 2.00263; train_acc 0.25000
+epoch 2, step 22: train_loss 1.24820; train_acc 0.62500
+epoch 2, step 23: train_loss 1.46055; train_acc 0.50000
+epoch 2, step 24: train_loss 1.51618; train_acc 0.50000
+epoch 2, step 25: train_loss 1.43213; train_acc 0.62500
+epoch 2, step 26: train_loss 0.82004; train_acc 0.87500
+epoch 2, step 27: train_loss 1.92446; train_acc 0.25000
+epoch 2, step 28: train_loss 1.23790; train_acc 0.62500
+epoch 2, step 29: train_loss 1.56959; train_acc 0.50000
+epoch 2, step 30: train_loss 1.11988; train_acc 0.75000
+epoch 2, step 31: train_loss 1.11002; train_acc 0.87500
+epoch 2, step 32: train_loss 1.22832; train_acc 0.62500
+epoch 2, step 33: train_loss 1.42396; train_acc 0.62500
+epoch 2, step 34: train_loss 1.55753; train_acc 0.37500
+epoch 2, step 35: train_loss 1.91052; train_acc 0.37500
+epoch 2, step 36: train_loss 1.46914; train_acc 0.50000
+Total # of test models:  123
+val mean class acc. :  0.4740641411879656
+val overall acc. :  0.6666666
+val loss :  1.1817332301288843
+num_views 12
+epoch 3, step 1: train_loss 1.26087; train_acc 0.62500
+epoch 3, step 2: train_loss 1.08080; train_acc 0.75000
+epoch 3, step 3: train_loss 0.95608; train_acc 0.75000
+epoch 3, step 4: train_loss 1.50303; train_acc 0.62500
+epoch 3, step 5: train_loss 1.47196; train_acc 0.62500
+epoch 3, step 6: train_loss 1.23298; train_acc 0.62500
+epoch 3, step 7: train_loss 1.00480; train_acc 0.87500
+epoch 3, step 8: train_loss 1.56317; train_acc 0.75000
+epoch 3, step 9: train_loss 1.16644; train_acc 0.62500
+epoch 3, step 10: train_loss 0.79588; train_acc 0.75000
+epoch 3, step 11: train_loss 0.91060; train_acc 0.75000
+epoch 3, step 12: train_loss 0.78730; train_acc 0.75000
+epoch 3, step 13: train_loss 1.66288; train_acc 0.50000
+epoch 3, step 14: train_loss 1.07078; train_acc 0.75000
+epoch 3, step 15: train_loss 0.59202; train_acc 1.00000
+epoch 3, step 16: train_loss 0.88751; train_acc 1.00000
+epoch 3, step 17: train_loss 0.83482; train_acc 0.87500
+epoch 3, step 18: train_loss 1.07655; train_acc 0.75000
+epoch 3, step 19: train_loss 1.31670; train_acc 0.37500
+epoch 3, step 20: train_loss 1.34297; train_acc 0.62500
+epoch 3, step 21: train_loss 1.12591; train_acc 0.75000
+epoch 3, step 22: train_loss 1.50686; train_acc 0.50000
+epoch 3, step 23: train_loss 0.51824; train_acc 0.87500
+epoch 3, step 24: train_loss 1.01227; train_acc 0.75000
+epoch 3, step 25: train_loss 0.83074; train_acc 0.87500
+epoch 3, step 26: train_loss 0.37249; train_acc 1.00000
+epoch 3, step 27: train_loss 0.96746; train_acc 0.75000
+epoch 3, step 28: train_loss 0.54038; train_acc 0.75000
+epoch 3, step 29: train_loss 0.93304; train_acc 0.75000
+epoch 3, step 30: train_loss 0.82888; train_acc 0.75000
+epoch 3, step 31: train_loss 1.61972; train_acc 0.50000
+epoch 3, step 32: train_loss 1.66584; train_acc 0.50000
+epoch 3, step 33: train_loss 0.36797; train_acc 1.00000
+epoch 3, step 34: train_loss 1.55572; train_acc 0.50000
+epoch 3, step 35: train_loss 1.80818; train_acc 0.37500
+epoch 3, step 36: train_loss 0.25768; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.6063349007314525
+val overall acc. :  0.7642276
+val loss :  0.8116144333034754
+num_views 12
+epoch 4, step 1: train_loss 0.32635; train_acc 1.00000
+epoch 4, step 2: train_loss 1.64564; train_acc 0.62500
+epoch 4, step 3: train_loss 0.86144; train_acc 0.75000
+epoch 4, step 4: train_loss 0.71910; train_acc 0.87500
+epoch 4, step 5: train_loss 0.71982; train_acc 0.87500
+epoch 4, step 6: train_loss 0.60374; train_acc 0.87500
+epoch 4, step 7: train_loss 0.97222; train_acc 0.75000
+epoch 4, step 8: train_loss 0.77578; train_acc 0.87500
+epoch 4, step 9: train_loss 0.81496; train_acc 0.87500
+epoch 4, step 10: train_loss 1.02098; train_acc 0.62500
+epoch 4, step 11: train_loss 1.38416; train_acc 0.50000
+epoch 4, step 12: train_loss 1.56707; train_acc 0.62500
+epoch 4, step 13: train_loss 0.63356; train_acc 0.87500
+epoch 4, step 14: train_loss 1.87381; train_acc 0.50000
+epoch 4, step 15: train_loss 0.78164; train_acc 0.87500
+epoch 4, step 16: train_loss 0.57431; train_acc 0.75000
+epoch 4, step 17: train_loss 0.29860; train_acc 0.87500
+epoch 4, step 18: train_loss 0.87349; train_acc 0.62500
+epoch 4, step 19: train_loss 0.81280; train_acc 0.87500
+epoch 4, step 20: train_loss 0.35558; train_acc 0.87500
+epoch 4, step 21: train_loss 0.94964; train_acc 0.62500
+epoch 4, step 22: train_loss 0.80432; train_acc 0.75000
+epoch 4, step 23: train_loss 0.59496; train_acc 0.87500
+epoch 4, step 24: train_loss 0.40056; train_acc 0.87500
+epoch 4, step 25: train_loss 0.53192; train_acc 0.87500
+epoch 4, step 26: train_loss 0.30671; train_acc 1.00000
+epoch 4, step 27: train_loss 0.69250; train_acc 0.87500
+epoch 4, step 28: train_loss 0.74422; train_acc 0.75000
+epoch 4, step 29: train_loss 0.92584; train_acc 0.75000
+epoch 4, step 30: train_loss 0.91969; train_acc 0.75000
+epoch 4, step 31: train_loss 1.16028; train_acc 0.62500
+epoch 4, step 32: train_loss 0.99199; train_acc 0.62500
+epoch 4, step 33: train_loss 0.98668; train_acc 0.75000
+epoch 4, step 34: train_loss 1.10218; train_acc 0.50000
+epoch 4, step 35: train_loss 1.10850; train_acc 0.62500
+epoch 4, step 36: train_loss 0.19895; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.6776158924669896
+val overall acc. :  0.804878
+val loss :  0.5924334144219756
+num_views 12
+epoch 5, step 1: train_loss 0.78834; train_acc 0.62500
+epoch 5, step 2: train_loss 1.68933; train_acc 0.37500
+epoch 5, step 3: train_loss 0.99289; train_acc 0.75000
+epoch 5, step 4: train_loss 1.12085; train_acc 0.62500
+epoch 5, step 5: train_loss 0.35829; train_acc 1.00000
+epoch 5, step 6: train_loss 1.16385; train_acc 0.75000
+epoch 5, step 7: train_loss 0.50231; train_acc 0.75000
+epoch 5, step 8: train_loss 0.29482; train_acc 1.00000
+epoch 5, step 9: train_loss 0.59381; train_acc 0.75000
+epoch 5, step 10: train_loss 0.49970; train_acc 0.87500
+epoch 5, step 11: train_loss 0.60318; train_acc 0.75000
+epoch 5, step 12: train_loss 0.22383; train_acc 1.00000
+epoch 5, step 13: train_loss 0.32423; train_acc 1.00000
+epoch 5, step 14: train_loss 1.49124; train_acc 0.50000
+epoch 5, step 15: train_loss 0.50951; train_acc 0.87500
+epoch 5, step 16: train_loss 0.35156; train_acc 1.00000
+epoch 5, step 17: train_loss 0.77848; train_acc 0.62500
+epoch 5, step 18: train_loss 0.85803; train_acc 0.75000
+epoch 5, step 19: train_loss 0.50556; train_acc 0.87500
+epoch 5, step 20: train_loss 0.49741; train_acc 0.87500
+epoch 5, step 21: train_loss 0.25274; train_acc 0.87500
+epoch 5, step 22: train_loss 0.78953; train_acc 0.75000
+epoch 5, step 23: train_loss 0.92504; train_acc 0.50000
+epoch 5, step 24: train_loss 0.70831; train_acc 0.87500
+epoch 5, step 25: train_loss 0.61592; train_acc 0.87500
+epoch 5, step 26: train_loss 0.91917; train_acc 0.62500
+epoch 5, step 27: train_loss 0.79282; train_acc 0.75000
+epoch 5, step 28: train_loss 0.20092; train_acc 1.00000
+epoch 5, step 29: train_loss 0.44075; train_acc 1.00000
+epoch 5, step 30: train_loss 0.39544; train_acc 0.87500
+epoch 5, step 31: train_loss 0.04131; train_acc 1.00000
+epoch 5, step 32: train_loss 0.06588; train_acc 1.00000
+epoch 5, step 33: train_loss 0.76037; train_acc 0.75000
+epoch 5, step 34: train_loss 0.21829; train_acc 1.00000
+epoch 5, step 35: train_loss 0.76355; train_acc 0.62500
+epoch 5, step 36: train_loss 0.33195; train_acc 0.87500
+Total # of test models:  123
+val mean class acc. :  0.726789446185998
+val overall acc. :  0.83739835
+val loss :  0.45545667177066207
+num_views 12
+epoch 6, step 1: train_loss 0.48355; train_acc 0.87500
+epoch 6, step 2: train_loss 0.31465; train_acc 0.87500
+epoch 6, step 3: train_loss 0.44672; train_acc 0.87500
+epoch 6, step 4: train_loss 0.21043; train_acc 1.00000
+epoch 6, step 5: train_loss 0.68887; train_acc 0.75000
+epoch 6, step 6: train_loss 0.59102; train_acc 0.62500
+epoch 6, step 7: train_loss 0.51922; train_acc 0.87500
+epoch 6, step 8: train_loss 0.84896; train_acc 0.75000
+epoch 6, step 9: train_loss 0.40646; train_acc 0.87500
+epoch 6, step 10: train_loss 0.35318; train_acc 0.87500
+epoch 6, step 11: train_loss 0.16116; train_acc 1.00000
+epoch 6, step 12: train_loss 0.27708; train_acc 0.87500
+epoch 6, step 13: train_loss 0.69978; train_acc 0.75000
+epoch 6, step 14: train_loss 0.37898; train_acc 0.87500
+epoch 6, step 15: train_loss 0.54801; train_acc 0.75000
+epoch 6, step 16: train_loss 0.34423; train_acc 0.87500
+epoch 6, step 17: train_loss 0.15224; train_acc 1.00000
+epoch 6, step 18: train_loss 0.22292; train_acc 0.87500
+epoch 6, step 19: train_loss 0.75135; train_acc 0.75000
+epoch 6, step 20: train_loss 0.33282; train_acc 1.00000
+epoch 6, step 21: train_loss 0.44731; train_acc 0.87500
+epoch 6, step 22: train_loss 0.63027; train_acc 0.87500
+epoch 6, step 23: train_loss 1.09711; train_acc 0.75000
+epoch 6, step 24: train_loss 0.55707; train_acc 0.87500
+epoch 6, step 25: train_loss 1.11256; train_acc 0.75000
+epoch 6, step 26: train_loss 0.17051; train_acc 1.00000
+epoch 6, step 27: train_loss 0.40063; train_acc 0.75000
+epoch 6, step 28: train_loss 0.23445; train_acc 1.00000
+epoch 6, step 29: train_loss 0.49887; train_acc 0.87500
+epoch 6, step 30: train_loss 0.76747; train_acc 0.75000
+epoch 6, step 31: train_loss 0.58263; train_acc 0.87500
+epoch 6, step 32: train_loss 0.64361; train_acc 0.62500
+epoch 6, step 33: train_loss 0.65489; train_acc 0.75000
+epoch 6, step 34: train_loss 0.39087; train_acc 0.87500
+epoch 6, step 35: train_loss 0.42807; train_acc 0.75000
+epoch 6, step 36: train_loss 0.46035; train_acc 0.75000
+Total # of test models:  123
+val mean class acc. :  0.8365334378265413
+val overall acc. :  0.902439
+val loss :  0.35042785480618477
+num_views 12
+epoch 7, step 1: train_loss 0.56189; train_acc 0.87500
+epoch 7, step 2: train_loss 0.22338; train_acc 1.00000
+epoch 7, step 3: train_loss 0.30338; train_acc 1.00000
+epoch 7, step 4: train_loss 0.13737; train_acc 1.00000
+epoch 7, step 5: train_loss 0.13691; train_acc 1.00000
+epoch 7, step 6: train_loss 0.20798; train_acc 0.87500
+epoch 7, step 7: train_loss 0.17481; train_acc 1.00000
+epoch 7, step 8: train_loss 0.21085; train_acc 1.00000
+epoch 7, step 9: train_loss 0.10849; train_acc 1.00000
+epoch 7, step 10: train_loss 0.17068; train_acc 1.00000
+epoch 7, step 11: train_loss 1.11561; train_acc 0.62500
+epoch 7, step 12: train_loss 0.18298; train_acc 1.00000
+epoch 7, step 13: train_loss 0.21829; train_acc 1.00000
+epoch 7, step 14: train_loss 0.17610; train_acc 0.87500
+epoch 7, step 15: train_loss 0.26120; train_acc 1.00000
+epoch 7, step 16: train_loss 0.46230; train_acc 0.87500
+epoch 7, step 17: train_loss 0.42741; train_acc 0.87500
+epoch 7, step 18: train_loss 0.50346; train_acc 0.87500
+epoch 7, step 19: train_loss 0.63266; train_acc 0.87500
+epoch 7, step 20: train_loss 0.03448; train_acc 1.00000
+epoch 7, step 21: train_loss 0.74280; train_acc 0.75000
+epoch 7, step 22: train_loss 0.36552; train_acc 0.87500
+epoch 7, step 23: train_loss 0.33954; train_acc 0.87500
+epoch 7, step 24: train_loss 0.15669; train_acc 1.00000
+epoch 7, step 25: train_loss 1.13542; train_acc 0.75000
+epoch 7, step 26: train_loss 0.20855; train_acc 0.87500
+epoch 7, step 27: train_loss 0.12059; train_acc 1.00000
+epoch 7, step 28: train_loss 0.35280; train_acc 0.87500
+epoch 7, step 29: train_loss 0.23381; train_acc 1.00000
+epoch 7, step 30: train_loss 0.23976; train_acc 1.00000
+epoch 7, step 31: train_loss 0.76177; train_acc 0.87500
+epoch 7, step 32: train_loss 0.22419; train_acc 1.00000
+epoch 7, step 33: train_loss 0.30061; train_acc 0.87500
+epoch 7, step 34: train_loss 0.31116; train_acc 0.87500
+epoch 7, step 35: train_loss 1.09732; train_acc 0.75000
+epoch 7, step 36: train_loss 0.13291; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.8902168234064786
+val overall acc. :  0.91869915
+val loss :  0.29073961480753496
+num_views 12
+epoch 8, step 1: train_loss 0.18201; train_acc 1.00000
+epoch 8, step 2: train_loss 0.30477; train_acc 1.00000
+epoch 8, step 3: train_loss 0.74103; train_acc 0.87500
+epoch 8, step 4: train_loss 0.09358; train_acc 1.00000
+epoch 8, step 5: train_loss 0.11715; train_acc 1.00000
+epoch 8, step 6: train_loss 0.25295; train_acc 1.00000
+epoch 8, step 7: train_loss 0.09441; train_acc 1.00000
+epoch 8, step 8: train_loss 0.43699; train_acc 0.75000
+epoch 8, step 9: train_loss 0.34441; train_acc 0.87500
+epoch 8, step 10: train_loss 0.34347; train_acc 0.87500
+epoch 8, step 11: train_loss 0.38755; train_acc 0.87500
+epoch 8, step 12: train_loss 0.28581; train_acc 0.87500
+epoch 8, step 13: train_loss 0.16186; train_acc 1.00000
+epoch 8, step 14: train_loss 0.35592; train_acc 0.87500
+epoch 8, step 15: train_loss 0.33849; train_acc 0.87500
+epoch 8, step 16: train_loss 0.51560; train_acc 0.87500
+epoch 8, step 17: train_loss 0.73849; train_acc 0.75000
+epoch 8, step 18: train_loss 0.14827; train_acc 1.00000
+epoch 8, step 19: train_loss 0.07322; train_acc 1.00000
+epoch 8, step 20: train_loss 0.29673; train_acc 0.87500
+epoch 8, step 21: train_loss 0.13135; train_acc 1.00000
+epoch 8, step 22: train_loss 0.16885; train_acc 0.87500
+epoch 8, step 23: train_loss 0.19948; train_acc 1.00000
+epoch 8, step 24: train_loss 0.65124; train_acc 0.75000
+epoch 8, step 25: train_loss 0.13462; train_acc 1.00000
+epoch 8, step 26: train_loss 0.05839; train_acc 1.00000
+epoch 8, step 27: train_loss 0.11287; train_acc 1.00000
+epoch 8, step 28: train_loss 0.49210; train_acc 0.87500
+epoch 8, step 29: train_loss 0.39586; train_acc 0.87500
+epoch 8, step 30: train_loss 0.06835; train_acc 1.00000
+epoch 8, step 31: train_loss 0.03977; train_acc 1.00000
+epoch 8, step 32: train_loss 0.42519; train_acc 0.87500
+epoch 8, step 33: train_loss 0.42469; train_acc 0.87500
+epoch 8, step 34: train_loss 0.18992; train_acc 0.87500
+epoch 8, step 35: train_loss 0.08863; train_acc 1.00000
+epoch 8, step 36: train_loss 0.23972; train_acc 0.87500
+Total # of test models:  123
+val mean class acc. :  0.8814037712548685
+val overall acc. :  0.9268292
+val loss :  0.27058381339884363
+num_views 12
+epoch 9, step 1: train_loss 0.23238; train_acc 0.87500
+epoch 9, step 2: train_loss 0.32807; train_acc 0.87500
+epoch 9, step 3: train_loss 0.07903; train_acc 1.00000
+epoch 9, step 4: train_loss 0.11026; train_acc 1.00000
+epoch 9, step 5: train_loss 0.18662; train_acc 1.00000
+epoch 9, step 6: train_loss 0.33028; train_acc 0.75000
+epoch 9, step 7: train_loss 0.38101; train_acc 0.75000
+epoch 9, step 8: train_loss 0.12138; train_acc 1.00000
+epoch 9, step 9: train_loss 0.53022; train_acc 0.75000
+epoch 9, step 10: train_loss 0.27955; train_acc 1.00000
+epoch 9, step 11: train_loss 0.15811; train_acc 0.87500
+epoch 9, step 12: train_loss 0.12614; train_acc 1.00000
+epoch 9, step 13: train_loss 0.03004; train_acc 1.00000
+epoch 9, step 14: train_loss 0.46525; train_acc 0.87500
+epoch 9, step 15: train_loss 0.10462; train_acc 1.00000
+epoch 9, step 16: train_loss 0.19677; train_acc 0.87500
+epoch 9, step 17: train_loss 0.21820; train_acc 1.00000
+epoch 9, step 18: train_loss 0.13951; train_acc 1.00000
+epoch 9, step 19: train_loss 0.44230; train_acc 0.62500
+epoch 9, step 20: train_loss 0.13103; train_acc 1.00000
+epoch 9, step 21: train_loss 0.98300; train_acc 0.50000
+epoch 9, step 22: train_loss 0.07517; train_acc 1.00000
+epoch 9, step 23: train_loss 0.45660; train_acc 0.87500
+epoch 9, step 24: train_loss 0.33422; train_acc 0.87500
+epoch 9, step 25: train_loss 0.34549; train_acc 0.87500
+epoch 9, step 26: train_loss 0.03363; train_acc 1.00000
+epoch 9, step 27: train_loss 0.28708; train_acc 0.87500
+epoch 9, step 28: train_loss 0.09903; train_acc 1.00000
+epoch 9, step 29: train_loss 0.22482; train_acc 0.87500
+epoch 9, step 30: train_loss 0.03649; train_acc 1.00000
+epoch 9, step 31: train_loss 0.51208; train_acc 0.75000
+epoch 9, step 32: train_loss 0.00772; train_acc 1.00000
+epoch 9, step 33: train_loss 0.20952; train_acc 0.87500
+epoch 9, step 34: train_loss 0.02589; train_acc 1.00000
+epoch 9, step 35: train_loss 0.13133; train_acc 1.00000
+epoch 9, step 36: train_loss 1.11723; train_acc 0.75000
+Total # of test models:  123
+val mean class acc. :  0.8586764985275956
+val overall acc. :  0.91869915
+val loss :  0.24401975485670846
+num_views 12
+epoch 10, step 1: train_loss 0.41523; train_acc 0.87500
+epoch 10, step 2: train_loss 0.08146; train_acc 1.00000
+epoch 10, step 3: train_loss 0.21442; train_acc 1.00000
+epoch 10, step 4: train_loss 0.22964; train_acc 1.00000
+epoch 10, step 5: train_loss 0.03570; train_acc 1.00000
+epoch 10, step 6: train_loss 0.39779; train_acc 0.87500
+epoch 10, step 7: train_loss 0.12759; train_acc 1.00000
+epoch 10, step 8: train_loss 0.02348; train_acc 1.00000
+epoch 10, step 9: train_loss 0.00507; train_acc 1.00000
+epoch 10, step 10: train_loss 0.02580; train_acc 1.00000
+epoch 10, step 11: train_loss 0.31176; train_acc 0.87500
+epoch 10, step 12: train_loss 0.03003; train_acc 1.00000
+epoch 10, step 13: train_loss 0.13842; train_acc 1.00000
+epoch 10, step 14: train_loss 0.26828; train_acc 0.87500
+epoch 10, step 15: train_loss 0.23073; train_acc 0.87500
+epoch 10, step 16: train_loss 0.20546; train_acc 1.00000
+epoch 10, step 17: train_loss 0.05905; train_acc 1.00000
+epoch 10, step 18: train_loss 0.13238; train_acc 0.87500
+epoch 10, step 19: train_loss 0.16429; train_acc 1.00000
+epoch 10, step 20: train_loss 0.04129; train_acc 1.00000
+epoch 10, step 21: train_loss 0.21159; train_acc 0.87500
+epoch 10, step 22: train_loss 0.09224; train_acc 1.00000
+epoch 10, step 23: train_loss 0.08678; train_acc 1.00000
+epoch 10, step 24: train_loss 0.21003; train_acc 1.00000
+epoch 10, step 25: train_loss 0.43818; train_acc 0.87500
+epoch 10, step 26: train_loss 0.29114; train_acc 0.87500
+epoch 10, step 27: train_loss 0.00441; train_acc 1.00000
+epoch 10, step 28: train_loss 0.43549; train_acc 0.75000
+epoch 10, step 29: train_loss 0.02639; train_acc 1.00000
+epoch 10, step 30: train_loss 0.05794; train_acc 1.00000
+epoch 10, step 31: train_loss 0.14397; train_acc 1.00000
+epoch 10, step 32: train_loss 0.57594; train_acc 0.87500
+epoch 10, step 33: train_loss 0.07043; train_acc 1.00000
+epoch 10, step 34: train_loss 0.12069; train_acc 1.00000
+epoch 10, step 35: train_loss 0.04055; train_acc 1.00000
+epoch 10, step 36: train_loss 0.15789; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.870040134891232
+val overall acc. :  0.91869915
+val loss :  0.23781830817461014
+num_views 12
+epoch 11, step 1: train_loss 0.01757; train_acc 1.00000
+epoch 11, step 2: train_loss 0.16748; train_acc 1.00000
+epoch 11, step 3: train_loss 0.00903; train_acc 1.00000
+epoch 11, step 4: train_loss 0.01111; train_acc 1.00000
+epoch 11, step 5: train_loss 0.03927; train_acc 1.00000
+epoch 11, step 6: train_loss 0.24204; train_acc 1.00000
+epoch 11, step 7: train_loss 0.14963; train_acc 0.87500
+epoch 11, step 8: train_loss 0.10195; train_acc 1.00000
+epoch 11, step 9: train_loss 0.22661; train_acc 1.00000
+epoch 11, step 10: train_loss 0.30587; train_acc 0.75000
+epoch 11, step 11: train_loss 0.02331; train_acc 1.00000
+epoch 11, step 12: train_loss 0.02873; train_acc 1.00000
+epoch 11, step 13: train_loss 0.06177; train_acc 1.00000
+epoch 11, step 14: train_loss 0.36796; train_acc 0.87500
+epoch 11, step 15: train_loss 0.00421; train_acc 1.00000
+epoch 11, step 16: train_loss 0.19043; train_acc 0.87500
+epoch 11, step 17: train_loss 0.02859; train_acc 1.00000
+epoch 11, step 18: train_loss 0.25158; train_acc 1.00000
+epoch 11, step 19: train_loss 0.04955; train_acc 1.00000
+epoch 11, step 20: train_loss 0.14408; train_acc 0.87500
+epoch 11, step 21: train_loss 0.16108; train_acc 1.00000
+epoch 11, step 22: train_loss 0.25534; train_acc 0.87500
+epoch 11, step 23: train_loss 0.01408; train_acc 1.00000
+epoch 11, step 24: train_loss 0.23005; train_acc 0.87500
+epoch 11, step 25: train_loss 0.03300; train_acc 1.00000
+epoch 11, step 26: train_loss 0.48018; train_acc 0.75000
+epoch 11, step 27: train_loss 0.15584; train_acc 1.00000
+epoch 11, step 28: train_loss 0.17094; train_acc 0.87500
+epoch 11, step 29: train_loss 0.02121; train_acc 1.00000
+epoch 11, step 30: train_loss 0.00337; train_acc 1.00000
+epoch 11, step 31: train_loss 0.11079; train_acc 1.00000
+epoch 11, step 32: train_loss 0.18916; train_acc 1.00000
+epoch 11, step 33: train_loss 0.05041; train_acc 1.00000
+epoch 11, step 34: train_loss 0.16534; train_acc 1.00000
+epoch 11, step 35: train_loss 0.31378; train_acc 0.87500
+epoch 11, step 36: train_loss 0.06919; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.8814037712548685
+val overall acc. :  0.9268292
+val loss :  0.20970876391220372
+num_views 12
+epoch 12, step 1: train_loss 0.13280; train_acc 0.87500
+epoch 12, step 2: train_loss 0.13224; train_acc 1.00000
+epoch 12, step 3: train_loss 0.09940; train_acc 1.00000
+epoch 12, step 4: train_loss 0.26082; train_acc 0.87500
+epoch 12, step 5: train_loss 0.08926; train_acc 1.00000
+epoch 12, step 6: train_loss 0.04859; train_acc 1.00000
+epoch 12, step 7: train_loss 0.27053; train_acc 0.87500
+epoch 12, step 8: train_loss 0.04062; train_acc 1.00000
+epoch 12, step 9: train_loss 0.00225; train_acc 1.00000
+epoch 12, step 10: train_loss 0.03627; train_acc 1.00000
+epoch 12, step 11: train_loss 0.04362; train_acc 1.00000
+epoch 12, step 12: train_loss 0.16268; train_acc 0.87500
+epoch 12, step 13: train_loss 0.42101; train_acc 0.87500
+epoch 12, step 14: train_loss 0.00827; train_acc 1.00000
+epoch 12, step 15: train_loss 0.01396; train_acc 1.00000
+epoch 12, step 16: train_loss 0.31680; train_acc 0.87500
+epoch 12, step 17: train_loss 0.07397; train_acc 1.00000
+epoch 12, step 18: train_loss 0.16988; train_acc 0.87500
+epoch 12, step 19: train_loss 0.22080; train_acc 0.87500
+epoch 12, step 20: train_loss 0.06821; train_acc 1.00000
+epoch 12, step 21: train_loss 0.00651; train_acc 1.00000
+epoch 12, step 22: train_loss 0.12712; train_acc 1.00000
+epoch 12, step 23: train_loss 0.08275; train_acc 1.00000
+epoch 12, step 24: train_loss 0.37612; train_acc 0.87500
+epoch 12, step 25: train_loss 0.15813; train_acc 1.00000
+epoch 12, step 26: train_loss 0.02795; train_acc 1.00000
+epoch 12, step 27: train_loss 0.06120; train_acc 1.00000
+epoch 12, step 28: train_loss 0.21972; train_acc 0.87500
+epoch 12, step 29: train_loss 0.00826; train_acc 1.00000
+epoch 12, step 30: train_loss 0.53016; train_acc 0.87500
+epoch 12, step 31: train_loss 0.01344; train_acc 1.00000
+epoch 12, step 32: train_loss 0.13304; train_acc 1.00000
+epoch 12, step 33: train_loss 0.31214; train_acc 0.87500
+epoch 12, step 34: train_loss 0.18892; train_acc 0.87500
+epoch 12, step 35: train_loss 0.22308; train_acc 0.87500
+epoch 12, step 36: train_loss 0.02053; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.8814037712548685
+val overall acc. :  0.9268292
+val loss :  0.22471862100064754
+num_views 12
+epoch 13, step 1: train_loss 0.05488; train_acc 1.00000
+epoch 13, step 2: train_loss 0.36419; train_acc 0.87500
+epoch 13, step 3: train_loss 0.24129; train_acc 0.87500
+epoch 13, step 4: train_loss 0.15931; train_acc 1.00000
+epoch 13, step 5: train_loss 0.00248; train_acc 1.00000
+epoch 13, step 6: train_loss 0.11072; train_acc 1.00000
+epoch 13, step 7: train_loss 0.12352; train_acc 1.00000
+epoch 13, step 8: train_loss 0.02785; train_acc 1.00000
+epoch 13, step 9: train_loss 0.06181; train_acc 1.00000
+epoch 13, step 10: train_loss 0.09890; train_acc 1.00000
+epoch 13, step 11: train_loss 0.13809; train_acc 1.00000
+epoch 13, step 12: train_loss 0.25202; train_acc 0.87500
+epoch 13, step 13: train_loss 0.26101; train_acc 0.87500
+epoch 13, step 14: train_loss 0.01691; train_acc 1.00000
+epoch 13, step 15: train_loss 0.03934; train_acc 1.00000
+epoch 13, step 16: train_loss 0.19016; train_acc 0.87500
+epoch 13, step 17: train_loss 0.31298; train_acc 0.87500
+epoch 13, step 18: train_loss 0.06860; train_acc 1.00000
+epoch 13, step 19: train_loss 0.09872; train_acc 1.00000
+epoch 13, step 20: train_loss 0.01240; train_acc 1.00000
+epoch 13, step 21: train_loss 0.24150; train_acc 0.87500
+epoch 13, step 22: train_loss 0.36548; train_acc 0.87500
+epoch 13, step 23: train_loss 0.03107; train_acc 1.00000
+epoch 13, step 24: train_loss 0.24000; train_acc 0.87500
+epoch 13, step 25: train_loss 0.21828; train_acc 1.00000
+epoch 13, step 26: train_loss 0.04340; train_acc 1.00000
+epoch 13, step 27: train_loss 0.02153; train_acc 1.00000
+epoch 13, step 28: train_loss 0.22308; train_acc 0.87500
+epoch 13, step 29: train_loss 0.02379; train_acc 1.00000
+epoch 13, step 30: train_loss 0.44225; train_acc 0.87500
+epoch 13, step 31: train_loss 0.06543; train_acc 1.00000
+epoch 13, step 32: train_loss 0.35043; train_acc 0.87500
+epoch 13, step 33: train_loss 0.23605; train_acc 0.87500
+epoch 13, step 34: train_loss 0.01288; train_acc 1.00000
+epoch 13, step 35: train_loss 0.05666; train_acc 1.00000
+epoch 13, step 36: train_loss 0.06529; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.8896326113802602
+val overall acc. :  0.9268292
+val loss :  0.2064633760601282
+num_views 12
+epoch 14, step 1: train_loss 0.50126; train_acc 0.75000
+epoch 14, step 2: train_loss 0.02541; train_acc 1.00000
+epoch 14, step 3: train_loss 0.10179; train_acc 1.00000
+epoch 14, step 4: train_loss 0.01865; train_acc 1.00000
+epoch 14, step 5: train_loss 0.00321; train_acc 1.00000
+epoch 14, step 6: train_loss 0.12564; train_acc 1.00000
+epoch 14, step 7: train_loss 0.04350; train_acc 1.00000
+epoch 14, step 8: train_loss 0.01464; train_acc 1.00000
+epoch 14, step 9: train_loss 0.03562; train_acc 1.00000
+epoch 14, step 10: train_loss 0.06047; train_acc 1.00000
+epoch 14, step 11: train_loss 0.00449; train_acc 1.00000
+epoch 14, step 12: train_loss 0.02060; train_acc 1.00000
+epoch 14, step 13: train_loss 0.01329; train_acc 1.00000
+epoch 14, step 14: train_loss 0.03578; train_acc 1.00000
+epoch 14, step 15: train_loss 0.00587; train_acc 1.00000
+epoch 14, step 16: train_loss 0.04712; train_acc 1.00000
+epoch 14, step 17: train_loss 0.01581; train_acc 1.00000
+epoch 14, step 18: train_loss 0.00987; train_acc 1.00000
+epoch 14, step 19: train_loss 0.04907; train_acc 1.00000
+epoch 14, step 20: train_loss 0.24982; train_acc 0.87500
+epoch 14, step 21: train_loss 0.10273; train_acc 0.87500
+epoch 14, step 22: train_loss 0.03591; train_acc 1.00000
+epoch 14, step 23: train_loss 0.00504; train_acc 1.00000
+epoch 14, step 24: train_loss 0.23235; train_acc 0.87500
+epoch 14, step 25: train_loss 0.26294; train_acc 0.87500
+epoch 14, step 26: train_loss 0.02081; train_acc 1.00000
+epoch 14, step 27: train_loss 0.24033; train_acc 0.87500
+epoch 14, step 28: train_loss 0.06254; train_acc 1.00000
+epoch 14, step 29: train_loss 0.04210; train_acc 1.00000
+epoch 14, step 30: train_loss 0.00430; train_acc 1.00000
+epoch 14, step 31: train_loss 0.01678; train_acc 1.00000
+epoch 14, step 32: train_loss 0.20159; train_acc 0.87500
+epoch 14, step 33: train_loss 0.67057; train_acc 0.75000
+epoch 14, step 34: train_loss 0.13385; train_acc 1.00000
+epoch 14, step 35: train_loss 0.11572; train_acc 1.00000
+epoch 14, step 36: train_loss 0.12282; train_acc 0.87500
+Total # of test models:  123
+val mean class acc. :  0.8814037712548685
+val overall acc. :  0.9268292
+val loss :  0.2138786526993499
+num_views 12
+epoch 15, step 1: train_loss 0.21568; train_acc 0.87500
+epoch 15, step 2: train_loss 0.01281; train_acc 1.00000
+epoch 15, step 3: train_loss 0.00964; train_acc 1.00000
+epoch 15, step 4: train_loss 0.27616; train_acc 0.87500
+epoch 15, step 5: train_loss 0.32552; train_acc 0.87500
+epoch 15, step 6: train_loss 0.00909; train_acc 1.00000
+epoch 15, step 7: train_loss 0.00932; train_acc 1.00000
+epoch 15, step 8: train_loss 0.19930; train_acc 1.00000
+epoch 15, step 9: train_loss 0.19785; train_acc 0.87500
+epoch 15, step 10: train_loss 0.29131; train_acc 0.87500
+epoch 15, step 11: train_loss 0.00863; train_acc 1.00000
+epoch 15, step 12: train_loss 0.07000; train_acc 1.00000
+epoch 15, step 13: train_loss 0.05566; train_acc 1.00000
+epoch 15, step 14: train_loss 0.08966; train_acc 1.00000
+epoch 15, step 15: train_loss 0.00726; train_acc 1.00000
+epoch 15, step 16: train_loss 0.10414; train_acc 1.00000
+epoch 15, step 17: train_loss 0.00655; train_acc 1.00000
+epoch 15, step 18: train_loss 0.03450; train_acc 1.00000
+epoch 15, step 19: train_loss 0.18518; train_acc 0.87500
+epoch 15, step 20: train_loss 0.01954; train_acc 1.00000
+epoch 15, step 21: train_loss 0.16202; train_acc 1.00000
+epoch 15, step 22: train_loss 0.02655; train_acc 1.00000
+epoch 15, step 23: train_loss 0.02633; train_acc 1.00000
+epoch 15, step 24: train_loss 0.10260; train_acc 1.00000
+epoch 15, step 25: train_loss 0.17530; train_acc 1.00000
+epoch 15, step 26: train_loss 0.08457; train_acc 1.00000
+epoch 15, step 27: train_loss 0.04341; train_acc 1.00000
+epoch 15, step 28: train_loss 0.00419; train_acc 1.00000
+epoch 15, step 29: train_loss 0.10150; train_acc 1.00000
+epoch 15, step 30: train_loss 0.05511; train_acc 1.00000
+epoch 15, step 31: train_loss 0.13483; train_acc 1.00000
+epoch 15, step 32: train_loss 0.06683; train_acc 1.00000
+epoch 15, step 33: train_loss 0.33634; train_acc 0.87500
+epoch 15, step 34: train_loss 0.09290; train_acc 1.00000
+epoch 15, step 35: train_loss 0.06609; train_acc 1.00000
+epoch 15, step 36: train_loss 0.09151; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9154946803457775
+val overall acc. :  0.94308937
+val loss :  0.19893075215441058
+num_views 12
+epoch 16, step 1: train_loss 0.37498; train_acc 0.87500
+epoch 16, step 2: train_loss 0.01229; train_acc 1.00000
+epoch 16, step 3: train_loss 0.02747; train_acc 1.00000
+epoch 16, step 4: train_loss 0.05527; train_acc 1.00000
+epoch 16, step 5: train_loss 0.15986; train_acc 1.00000
+epoch 16, step 6: train_loss 0.03681; train_acc 1.00000
+epoch 16, step 7: train_loss 0.05367; train_acc 1.00000
+epoch 16, step 8: train_loss 0.02472; train_acc 1.00000
+epoch 16, step 9: train_loss 0.17884; train_acc 1.00000
+epoch 16, step 10: train_loss 0.01908; train_acc 1.00000
+epoch 16, step 11: train_loss 0.07300; train_acc 1.00000
+epoch 16, step 12: train_loss 0.03809; train_acc 1.00000
+epoch 16, step 13: train_loss 0.16128; train_acc 0.87500
+epoch 16, step 14: train_loss 0.02837; train_acc 1.00000
+epoch 16, step 15: train_loss 0.02044; train_acc 1.00000
+epoch 16, step 16: train_loss 0.19154; train_acc 0.87500
+epoch 16, step 17: train_loss 0.09854; train_acc 1.00000
+epoch 16, step 18: train_loss 0.00361; train_acc 1.00000
+epoch 16, step 19: train_loss 0.04152; train_acc 1.00000
+epoch 16, step 20: train_loss 0.13594; train_acc 1.00000
+epoch 16, step 21: train_loss 0.14148; train_acc 0.87500
+epoch 16, step 22: train_loss 0.05674; train_acc 1.00000
+epoch 16, step 23: train_loss 0.01211; train_acc 1.00000
+epoch 16, step 24: train_loss 0.00374; train_acc 1.00000
+epoch 16, step 25: train_loss 0.03167; train_acc 1.00000
+epoch 16, step 26: train_loss 0.11330; train_acc 1.00000
+epoch 16, step 27: train_loss 0.36823; train_acc 0.87500
+epoch 16, step 28: train_loss 0.18520; train_acc 0.87500
+epoch 16, step 29: train_loss 0.03803; train_acc 1.00000
+epoch 16, step 30: train_loss 0.31532; train_acc 0.87500
+epoch 16, step 31: train_loss 0.04007; train_acc 1.00000
+epoch 16, step 32: train_loss 0.11601; train_acc 1.00000
+epoch 16, step 33: train_loss 0.00754; train_acc 1.00000
+epoch 16, step 34: train_loss 0.06912; train_acc 1.00000
+epoch 16, step 35: train_loss 0.01519; train_acc 1.00000
+epoch 16, step 36: train_loss 0.40881; train_acc 0.87500
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.19201449863612652
+num_views 12
+epoch 17, step 1: train_loss 0.05371; train_acc 1.00000
+epoch 17, step 2: train_loss 0.02030; train_acc 1.00000
+epoch 17, step 3: train_loss 0.32140; train_acc 0.87500
+epoch 17, step 4: train_loss 0.00836; train_acc 1.00000
+epoch 17, step 5: train_loss 0.57581; train_acc 0.75000
+epoch 17, step 6: train_loss 0.03288; train_acc 1.00000
+epoch 17, step 7: train_loss 0.02858; train_acc 1.00000
+epoch 17, step 8: train_loss 0.07961; train_acc 1.00000
+epoch 17, step 9: train_loss 0.07093; train_acc 1.00000
+epoch 17, step 10: train_loss 0.02047; train_acc 1.00000
+epoch 17, step 11: train_loss 0.03817; train_acc 1.00000
+epoch 17, step 12: train_loss 0.01473; train_acc 1.00000
+epoch 17, step 13: train_loss 0.53001; train_acc 0.87500
+epoch 17, step 14: train_loss 0.02415; train_acc 1.00000
+epoch 17, step 15: train_loss 0.00712; train_acc 1.00000
+epoch 17, step 16: train_loss 0.04764; train_acc 1.00000
+epoch 17, step 17: train_loss 0.01955; train_acc 1.00000
+epoch 17, step 18: train_loss 0.04550; train_acc 1.00000
+epoch 17, step 19: train_loss 0.04460; train_acc 1.00000
+epoch 17, step 20: train_loss 0.14068; train_acc 1.00000
+epoch 17, step 21: train_loss 0.01377; train_acc 1.00000
+epoch 17, step 22: train_loss 0.04248; train_acc 1.00000
+epoch 17, step 23: train_loss 0.09449; train_acc 1.00000
+epoch 17, step 24: train_loss 0.00627; train_acc 1.00000
+epoch 17, step 25: train_loss 0.03995; train_acc 1.00000
+epoch 17, step 26: train_loss 0.02062; train_acc 1.00000
+epoch 17, step 27: train_loss 0.17964; train_acc 0.87500
+epoch 17, step 28: train_loss 0.03769; train_acc 1.00000
+epoch 17, step 29: train_loss 0.02126; train_acc 1.00000
+epoch 17, step 30: train_loss 0.00141; train_acc 1.00000
+epoch 17, step 31: train_loss 0.01061; train_acc 1.00000
+epoch 17, step 32: train_loss 0.02135; train_acc 1.00000
+epoch 17, step 33: train_loss 0.27129; train_acc 0.87500
+epoch 17, step 34: train_loss 0.07711; train_acc 1.00000
+epoch 17, step 35: train_loss 0.00285; train_acc 1.00000
+epoch 17, step 36: train_loss 0.01252; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9192136886102403
+val overall acc. :  0.9512195
+val loss :  0.19979053363204002
+num_views 12
+epoch 18, step 1: train_loss 0.03825; train_acc 1.00000
+epoch 18, step 2: train_loss 0.00158; train_acc 1.00000
+epoch 18, step 3: train_loss 0.04561; train_acc 1.00000
+epoch 18, step 4: train_loss 0.26099; train_acc 0.75000
+epoch 18, step 5: train_loss 0.05834; train_acc 1.00000
+epoch 18, step 6: train_loss 0.07913; train_acc 1.00000
+epoch 18, step 7: train_loss 0.19814; train_acc 0.87500
+epoch 18, step 8: train_loss 0.04336; train_acc 1.00000
+epoch 18, step 9: train_loss 0.08822; train_acc 1.00000
+epoch 18, step 10: train_loss 0.01651; train_acc 1.00000
+epoch 18, step 11: train_loss 0.21749; train_acc 0.87500
+epoch 18, step 12: train_loss 0.11688; train_acc 1.00000
+epoch 18, step 13: train_loss 0.01439; train_acc 1.00000
+epoch 18, step 14: train_loss 0.01976; train_acc 1.00000
+epoch 18, step 15: train_loss 0.01707; train_acc 1.00000
+epoch 18, step 16: train_loss 0.11370; train_acc 1.00000
+epoch 18, step 17: train_loss 0.00278; train_acc 1.00000
+epoch 18, step 18: train_loss 0.09491; train_acc 1.00000
+epoch 18, step 19: train_loss 0.01107; train_acc 1.00000
+epoch 18, step 20: train_loss 0.02494; train_acc 1.00000
+epoch 18, step 21: train_loss 0.14477; train_acc 0.87500
+epoch 18, step 22: train_loss 0.09987; train_acc 1.00000
+epoch 18, step 23: train_loss 0.03489; train_acc 1.00000
+epoch 18, step 24: train_loss 0.00454; train_acc 1.00000
+epoch 18, step 25: train_loss 0.07682; train_acc 1.00000
+epoch 18, step 26: train_loss 0.01593; train_acc 1.00000
+epoch 18, step 27: train_loss 0.06684; train_acc 1.00000
+epoch 18, step 28: train_loss 0.03905; train_acc 1.00000
+epoch 18, step 29: train_loss 0.00579; train_acc 1.00000
+epoch 18, step 30: train_loss 0.02532; train_acc 1.00000
+epoch 18, step 31: train_loss 0.03051; train_acc 1.00000
+epoch 18, step 32: train_loss 0.18815; train_acc 0.87500
+epoch 18, step 33: train_loss 0.04465; train_acc 1.00000
+epoch 18, step 34: train_loss 0.03741; train_acc 1.00000
+epoch 18, step 35: train_loss 0.00322; train_acc 1.00000
+epoch 18, step 36: train_loss 0.02739; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9123598841075329
+val overall acc. :  0.9349593
+val loss :  0.19228723272681236
+num_views 12
+epoch 19, step 1: train_loss 0.03102; train_acc 1.00000
+epoch 19, step 2: train_loss 0.03622; train_acc 1.00000
+epoch 19, step 3: train_loss 0.00679; train_acc 1.00000
+epoch 19, step 4: train_loss 0.06491; train_acc 1.00000
+epoch 19, step 5: train_loss 0.02695; train_acc 1.00000
+epoch 19, step 6: train_loss 0.10316; train_acc 0.87500
+epoch 19, step 7: train_loss 0.09345; train_acc 1.00000
+epoch 19, step 8: train_loss 0.00081; train_acc 1.00000
+epoch 19, step 9: train_loss 0.00362; train_acc 1.00000
+epoch 19, step 10: train_loss 0.01219; train_acc 1.00000
+epoch 19, step 11: train_loss 0.01801; train_acc 1.00000
+epoch 19, step 12: train_loss 0.00723; train_acc 1.00000
+epoch 19, step 13: train_loss 0.00162; train_acc 1.00000
+epoch 19, step 14: train_loss 0.05865; train_acc 1.00000
+epoch 19, step 15: train_loss 0.00543; train_acc 1.00000
+epoch 19, step 16: train_loss 0.02643; train_acc 1.00000
+epoch 19, step 17: train_loss 0.02806; train_acc 1.00000
+epoch 19, step 18: train_loss 0.00059; train_acc 1.00000
+epoch 19, step 19: train_loss 0.01354; train_acc 1.00000
+epoch 19, step 20: train_loss 0.02888; train_acc 1.00000
+epoch 19, step 21: train_loss 0.00117; train_acc 1.00000
+epoch 19, step 22: train_loss 0.03738; train_acc 1.00000
+epoch 19, step 23: train_loss 0.19278; train_acc 0.87500
+epoch 19, step 24: train_loss 0.04437; train_acc 1.00000
+epoch 19, step 25: train_loss 0.00745; train_acc 1.00000
+epoch 19, step 26: train_loss 0.22065; train_acc 0.87500
+epoch 19, step 27: train_loss 0.00230; train_acc 1.00000
+epoch 19, step 28: train_loss 0.06625; train_acc 1.00000
+epoch 19, step 29: train_loss 0.11127; train_acc 1.00000
+epoch 19, step 30: train_loss 0.12931; train_acc 1.00000
+epoch 19, step 31: train_loss 0.10165; train_acc 0.87500
+epoch 19, step 32: train_loss 0.02807; train_acc 1.00000
+epoch 19, step 33: train_loss 0.04647; train_acc 1.00000
+epoch 19, step 34: train_loss 0.02337; train_acc 1.00000
+epoch 19, step 35: train_loss 0.13968; train_acc 0.87500
+epoch 19, step 36: train_loss 0.08609; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9123598841075329
+val overall acc. :  0.9349593
+val loss :  0.1940466115875097
+num_views 12
+epoch 20, step 1: train_loss 0.01120; train_acc 1.00000
+epoch 20, step 2: train_loss 0.02131; train_acc 1.00000
+epoch 20, step 3: train_loss 0.08983; train_acc 1.00000
+epoch 20, step 4: train_loss 0.17737; train_acc 0.87500
+epoch 20, step 5: train_loss 0.39649; train_acc 0.87500
+epoch 20, step 6: train_loss 0.01428; train_acc 1.00000
+epoch 20, step 7: train_loss 0.20157; train_acc 0.87500
+epoch 20, step 8: train_loss 0.04304; train_acc 1.00000
+epoch 20, step 9: train_loss 0.09869; train_acc 1.00000
+epoch 20, step 10: train_loss 0.08755; train_acc 1.00000
+epoch 20, step 11: train_loss 0.10645; train_acc 1.00000
+epoch 20, step 12: train_loss 0.01004; train_acc 1.00000
+epoch 20, step 13: train_loss 0.00504; train_acc 1.00000
+epoch 20, step 14: train_loss 0.01168; train_acc 1.00000
+epoch 20, step 15: train_loss 0.00760; train_acc 1.00000
+epoch 20, step 16: train_loss 0.00567; train_acc 1.00000
+epoch 20, step 17: train_loss 0.06675; train_acc 1.00000
+epoch 20, step 18: train_loss 0.00238; train_acc 1.00000
+epoch 20, step 19: train_loss 0.01544; train_acc 1.00000
+epoch 20, step 20: train_loss 0.09126; train_acc 1.00000
+epoch 20, step 21: train_loss 0.02836; train_acc 1.00000
+epoch 20, step 22: train_loss 0.05561; train_acc 1.00000
+epoch 20, step 23: train_loss 0.01976; train_acc 1.00000
+epoch 20, step 24: train_loss 0.00337; train_acc 1.00000
+epoch 20, step 25: train_loss 0.02577; train_acc 1.00000
+epoch 20, step 26: train_loss 0.02964; train_acc 1.00000
+epoch 20, step 27: train_loss 0.00294; train_acc 1.00000
+epoch 20, step 28: train_loss 0.07376; train_acc 1.00000
+epoch 20, step 29: train_loss 0.02509; train_acc 1.00000
+epoch 20, step 30: train_loss 0.01400; train_acc 1.00000
+epoch 20, step 31: train_loss 0.09046; train_acc 1.00000
+epoch 20, step 32: train_loss 0.01798; train_acc 1.00000
+epoch 20, step 33: train_loss 0.03617; train_acc 1.00000
+epoch 20, step 34: train_loss 0.01064; train_acc 1.00000
+epoch 20, step 35: train_loss 0.23673; train_acc 0.87500
+epoch 20, step 36: train_loss 0.01490; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9009962477438965
+val overall acc. :  0.9268292
+val loss :  0.1854576996220203
+num_views 12
+epoch 21, step 1: train_loss 0.03779; train_acc 1.00000
+epoch 21, step 2: train_loss 0.13826; train_acc 1.00000
+epoch 21, step 3: train_loss 0.00233; train_acc 1.00000
+epoch 21, step 4: train_loss 0.08704; train_acc 1.00000
+epoch 21, step 5: train_loss 0.02179; train_acc 1.00000
+epoch 21, step 6: train_loss 0.00437; train_acc 1.00000
+epoch 21, step 7: train_loss 0.01273; train_acc 1.00000
+epoch 21, step 8: train_loss 0.02319; train_acc 1.00000
+epoch 21, step 9: train_loss 0.13782; train_acc 1.00000
+epoch 21, step 10: train_loss 0.01199; train_acc 1.00000
+epoch 21, step 11: train_loss 0.01557; train_acc 1.00000
+epoch 21, step 12: train_loss 0.01464; train_acc 1.00000
+epoch 21, step 13: train_loss 0.24978; train_acc 0.87500
+epoch 21, step 14: train_loss 0.28582; train_acc 0.87500
+epoch 21, step 15: train_loss 0.00047; train_acc 1.00000
+epoch 21, step 16: train_loss 0.01257; train_acc 1.00000
+epoch 21, step 17: train_loss 0.06287; train_acc 1.00000
+epoch 21, step 18: train_loss 0.00184; train_acc 1.00000
+epoch 21, step 19: train_loss 0.01266; train_acc 1.00000
+epoch 21, step 20: train_loss 0.15113; train_acc 0.87500
+epoch 21, step 21: train_loss 0.09190; train_acc 1.00000
+epoch 21, step 22: train_loss 0.00866; train_acc 1.00000
+epoch 21, step 23: train_loss 0.01745; train_acc 1.00000
+epoch 21, step 24: train_loss 0.30453; train_acc 0.87500
+epoch 21, step 25: train_loss 0.06561; train_acc 1.00000
+epoch 21, step 26: train_loss 0.04420; train_acc 1.00000
+epoch 21, step 27: train_loss 0.00930; train_acc 1.00000
+epoch 21, step 28: train_loss 0.02843; train_acc 1.00000
+epoch 21, step 29: train_loss 0.03653; train_acc 1.00000
+epoch 21, step 30: train_loss 0.00734; train_acc 1.00000
+epoch 21, step 31: train_loss 0.10305; train_acc 1.00000
+epoch 21, step 32: train_loss 0.11203; train_acc 1.00000
+epoch 21, step 33: train_loss 0.02205; train_acc 1.00000
+epoch 21, step 34: train_loss 0.01834; train_acc 1.00000
+epoch 21, step 35: train_loss 0.01161; train_acc 1.00000
+epoch 21, step 36: train_loss 0.32979; train_acc 0.87500
+Total # of test models:  123
+val mean class acc. :  0.9154946803457775
+val overall acc. :  0.94308937
+val loss :  0.1809192169457674
+num_views 12
+epoch 22, step 1: train_loss 0.01038; train_acc 1.00000
+epoch 22, step 2: train_loss 0.10929; train_acc 1.00000
+epoch 22, step 3: train_loss 0.00072; train_acc 1.00000
+epoch 22, step 4: train_loss 0.00357; train_acc 1.00000
+epoch 22, step 5: train_loss 0.00235; train_acc 1.00000
+epoch 22, step 6: train_loss 0.03083; train_acc 1.00000
+epoch 22, step 7: train_loss 0.02306; train_acc 1.00000
+epoch 22, step 8: train_loss 0.00423; train_acc 1.00000
+epoch 22, step 9: train_loss 0.17540; train_acc 0.87500
+epoch 22, step 10: train_loss 0.01671; train_acc 1.00000
+epoch 22, step 11: train_loss 0.00785; train_acc 1.00000
+epoch 22, step 12: train_loss 0.01076; train_acc 1.00000
+epoch 22, step 13: train_loss 0.01421; train_acc 1.00000
+epoch 22, step 14: train_loss 0.00285; train_acc 1.00000
+epoch 22, step 15: train_loss 0.00270; train_acc 1.00000
+epoch 22, step 16: train_loss 0.02232; train_acc 1.00000
+epoch 22, step 17: train_loss 0.02194; train_acc 1.00000
+epoch 22, step 18: train_loss 0.01410; train_acc 1.00000
+epoch 22, step 19: train_loss 0.08263; train_acc 1.00000
+epoch 22, step 20: train_loss 0.03371; train_acc 1.00000
+epoch 22, step 21: train_loss 0.22532; train_acc 0.87500
+epoch 22, step 22: train_loss 0.12333; train_acc 0.87500
+epoch 22, step 23: train_loss 0.05949; train_acc 1.00000
+epoch 22, step 24: train_loss 0.01878; train_acc 1.00000
+epoch 22, step 25: train_loss 0.22678; train_acc 0.87500
+epoch 22, step 26: train_loss 0.00555; train_acc 1.00000
+epoch 22, step 27: train_loss 0.00206; train_acc 1.00000
+epoch 22, step 28: train_loss 0.00547; train_acc 1.00000
+epoch 22, step 29: train_loss 0.02290; train_acc 1.00000
+epoch 22, step 30: train_loss 0.05073; train_acc 1.00000
+epoch 22, step 31: train_loss 0.01938; train_acc 1.00000
+epoch 22, step 32: train_loss 0.19352; train_acc 1.00000
+epoch 22, step 33: train_loss 0.00828; train_acc 1.00000
+epoch 22, step 34: train_loss 0.00103; train_acc 1.00000
+epoch 22, step 35: train_loss 0.13289; train_acc 1.00000
+epoch 22, step 36: train_loss 0.00332; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.18644024431705475
+num_views 12
+epoch 23, step 1: train_loss 0.03793; train_acc 1.00000
+epoch 23, step 2: train_loss 0.01794; train_acc 1.00000
+epoch 23, step 3: train_loss 0.58452; train_acc 0.87500
+epoch 23, step 4: train_loss 0.00492; train_acc 1.00000
+epoch 23, step 5: train_loss 0.00740; train_acc 1.00000
+epoch 23, step 6: train_loss 0.00824; train_acc 1.00000
+epoch 23, step 7: train_loss 0.00281; train_acc 1.00000
+epoch 23, step 8: train_loss 0.05633; train_acc 1.00000
+epoch 23, step 9: train_loss 0.17895; train_acc 1.00000
+epoch 23, step 10: train_loss 0.01391; train_acc 1.00000
+epoch 23, step 11: train_loss 0.07996; train_acc 1.00000
+epoch 23, step 12: train_loss 0.01741; train_acc 1.00000
+epoch 23, step 13: train_loss 0.05906; train_acc 1.00000
+epoch 23, step 14: train_loss 0.00915; train_acc 1.00000
+epoch 23, step 15: train_loss 0.01622; train_acc 1.00000
+epoch 23, step 16: train_loss 0.01171; train_acc 1.00000
+epoch 23, step 17: train_loss 0.01716; train_acc 1.00000
+epoch 23, step 18: train_loss 0.01996; train_acc 1.00000
+epoch 23, step 19: train_loss 0.01820; train_acc 1.00000
+epoch 23, step 20: train_loss 0.14445; train_acc 1.00000
+epoch 23, step 21: train_loss 0.01291; train_acc 1.00000
+epoch 23, step 22: train_loss 0.00968; train_acc 1.00000
+epoch 23, step 23: train_loss 0.16370; train_acc 0.87500
+epoch 23, step 24: train_loss 0.04613; train_acc 1.00000
+epoch 23, step 25: train_loss 0.05110; train_acc 1.00000
+epoch 23, step 26: train_loss 0.03257; train_acc 1.00000
+epoch 23, step 27: train_loss 0.01093; train_acc 1.00000
+epoch 23, step 28: train_loss 0.14569; train_acc 1.00000
+epoch 23, step 29: train_loss 0.30937; train_acc 0.87500
+epoch 23, step 30: train_loss 0.00538; train_acc 1.00000
+epoch 23, step 31: train_loss 0.00149; train_acc 1.00000
+epoch 23, step 32: train_loss 0.03104; train_acc 1.00000
+epoch 23, step 33: train_loss 0.00652; train_acc 1.00000
+epoch 23, step 34: train_loss 0.05988; train_acc 1.00000
+epoch 23, step 35: train_loss 0.00706; train_acc 1.00000
+epoch 23, step 36: train_loss 0.01944; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9123598841075329
+val overall acc. :  0.9349593
+val loss :  0.1945937592536211
+num_views 12
+epoch 24, step 1: train_loss 0.03848; train_acc 1.00000
+epoch 24, step 2: train_loss 0.11867; train_acc 0.87500
+epoch 24, step 3: train_loss 0.01666; train_acc 1.00000
+epoch 24, step 4: train_loss 0.00093; train_acc 1.00000
+epoch 24, step 5: train_loss 0.01212; train_acc 1.00000
+epoch 24, step 6: train_loss 0.01844; train_acc 1.00000
+epoch 24, step 7: train_loss 0.04010; train_acc 1.00000
+epoch 24, step 8: train_loss 0.01301; train_acc 1.00000
+epoch 24, step 9: train_loss 0.00097; train_acc 1.00000
+epoch 24, step 10: train_loss 0.00123; train_acc 1.00000
+epoch 24, step 11: train_loss 0.00261; train_acc 1.00000
+epoch 24, step 12: train_loss 0.10608; train_acc 1.00000
+epoch 24, step 13: train_loss 0.15761; train_acc 1.00000
+epoch 24, step 14: train_loss 0.01807; train_acc 1.00000
+epoch 24, step 15: train_loss 0.01216; train_acc 1.00000
+epoch 24, step 16: train_loss 0.01191; train_acc 1.00000
+epoch 24, step 17: train_loss 0.00659; train_acc 1.00000
+epoch 24, step 18: train_loss 0.22397; train_acc 0.87500
+epoch 24, step 19: train_loss 0.09015; train_acc 1.00000
+epoch 24, step 20: train_loss 0.09439; train_acc 1.00000
+epoch 24, step 21: train_loss 0.01077; train_acc 1.00000
+epoch 24, step 22: train_loss 0.01064; train_acc 1.00000
+epoch 24, step 23: train_loss 0.00310; train_acc 1.00000
+epoch 24, step 24: train_loss 0.00103; train_acc 1.00000
+epoch 24, step 25: train_loss 0.04172; train_acc 1.00000
+epoch 24, step 26: train_loss 0.01213; train_acc 1.00000
+epoch 24, step 27: train_loss 0.01198; train_acc 1.00000
+epoch 24, step 28: train_loss 0.08524; train_acc 1.00000
+epoch 24, step 29: train_loss 0.04020; train_acc 1.00000
+epoch 24, step 30: train_loss 0.01819; train_acc 1.00000
+epoch 24, step 31: train_loss 0.05125; train_acc 1.00000
+epoch 24, step 32: train_loss 0.10904; train_acc 1.00000
+epoch 24, step 33: train_loss 0.00349; train_acc 1.00000
+epoch 24, step 34: train_loss 0.00449; train_acc 1.00000
+epoch 24, step 35: train_loss 0.01651; train_acc 1.00000
+epoch 24, step 36: train_loss 0.01443; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9274425287356323
+val overall acc. :  0.94308937
+val loss :  0.18585715691278892
+num_views 12
+epoch 25, step 1: train_loss 0.06317; train_acc 1.00000
+epoch 25, step 2: train_loss 0.02905; train_acc 1.00000
+epoch 25, step 3: train_loss 0.01659; train_acc 1.00000
+epoch 25, step 4: train_loss 0.00435; train_acc 1.00000
+epoch 25, step 5: train_loss 0.34503; train_acc 0.87500
+epoch 25, step 6: train_loss 0.01817; train_acc 1.00000
+epoch 25, step 7: train_loss 0.00660; train_acc 1.00000
+epoch 25, step 8: train_loss 0.01645; train_acc 1.00000
+epoch 25, step 9: train_loss 0.00323; train_acc 1.00000
+epoch 25, step 10: train_loss 0.01865; train_acc 1.00000
+epoch 25, step 11: train_loss 0.07480; train_acc 1.00000
+epoch 25, step 12: train_loss 0.46093; train_acc 0.87500
+epoch 25, step 13: train_loss 0.01067; train_acc 1.00000
+epoch 25, step 14: train_loss 0.01798; train_acc 1.00000
+epoch 25, step 15: train_loss 0.10722; train_acc 0.87500
+epoch 25, step 16: train_loss 0.01227; train_acc 1.00000
+epoch 25, step 17: train_loss 0.04749; train_acc 1.00000
+epoch 25, step 18: train_loss 0.04109; train_acc 1.00000
+epoch 25, step 19: train_loss 0.00047; train_acc 1.00000
+epoch 25, step 20: train_loss 0.00880; train_acc 1.00000
+epoch 25, step 21: train_loss 0.05777; train_acc 1.00000
+epoch 25, step 22: train_loss 0.03055; train_acc 1.00000
+epoch 25, step 23: train_loss 0.09997; train_acc 1.00000
+epoch 25, step 24: train_loss 0.03024; train_acc 1.00000
+epoch 25, step 25: train_loss 0.00128; train_acc 1.00000
+epoch 25, step 26: train_loss 0.06804; train_acc 1.00000
+epoch 25, step 27: train_loss 0.01804; train_acc 1.00000
+epoch 25, step 28: train_loss 0.03920; train_acc 1.00000
+epoch 25, step 29: train_loss 0.04362; train_acc 1.00000
+epoch 25, step 30: train_loss 0.00080; train_acc 1.00000
+epoch 25, step 31: train_loss 0.01023; train_acc 1.00000
+epoch 25, step 32: train_loss 0.01384; train_acc 1.00000
+epoch 25, step 33: train_loss 0.00112; train_acc 1.00000
+epoch 25, step 34: train_loss 0.00335; train_acc 1.00000
+epoch 25, step 35: train_loss 0.00467; train_acc 1.00000
+epoch 25, step 36: train_loss 0.10279; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.18212202253471332
+num_views 12
+epoch 26, step 1: train_loss 0.02973; train_acc 1.00000
+epoch 26, step 2: train_loss 0.00970; train_acc 1.00000
+epoch 26, step 3: train_loss 0.11483; train_acc 0.87500
+epoch 26, step 4: train_loss 0.03201; train_acc 1.00000
+epoch 26, step 5: train_loss 0.00602; train_acc 1.00000
+epoch 26, step 6: train_loss 0.29269; train_acc 0.87500
+epoch 26, step 7: train_loss 0.00163; train_acc 1.00000
+epoch 26, step 8: train_loss 0.00524; train_acc 1.00000
+epoch 26, step 9: train_loss 0.03353; train_acc 1.00000
+epoch 26, step 10: train_loss 0.06016; train_acc 1.00000
+epoch 26, step 11: train_loss 0.12724; train_acc 1.00000
+epoch 26, step 12: train_loss 0.03281; train_acc 1.00000
+epoch 26, step 13: train_loss 0.25671; train_acc 0.87500
+epoch 26, step 14: train_loss 0.02105; train_acc 1.00000
+epoch 26, step 15: train_loss 0.12692; train_acc 1.00000
+epoch 26, step 16: train_loss 0.02217; train_acc 1.00000
+epoch 26, step 17: train_loss 0.00995; train_acc 1.00000
+epoch 26, step 18: train_loss 0.01853; train_acc 1.00000
+epoch 26, step 19: train_loss 0.01331; train_acc 1.00000
+epoch 26, step 20: train_loss 0.02101; train_acc 1.00000
+epoch 26, step 21: train_loss 0.13261; train_acc 0.87500
+epoch 26, step 22: train_loss 0.01657; train_acc 1.00000
+epoch 26, step 23: train_loss 0.04573; train_acc 1.00000
+epoch 26, step 24: train_loss 0.01152; train_acc 1.00000
+epoch 26, step 25: train_loss 0.06710; train_acc 1.00000
+epoch 26, step 26: train_loss 0.00199; train_acc 1.00000
+epoch 26, step 27: train_loss 0.01008; train_acc 1.00000
+epoch 26, step 28: train_loss 0.12463; train_acc 0.87500
+epoch 26, step 29: train_loss 0.00514; train_acc 1.00000
+epoch 26, step 30: train_loss 0.08525; train_acc 1.00000
+epoch 26, step 31: train_loss 0.00234; train_acc 1.00000
+epoch 26, step 32: train_loss 0.00147; train_acc 1.00000
+epoch 26, step 33: train_loss 0.00164; train_acc 1.00000
+epoch 26, step 34: train_loss 0.01674; train_acc 1.00000
+epoch 26, step 35: train_loss 0.00230; train_acc 1.00000
+epoch 26, step 36: train_loss 0.00707; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.923759143155695
+val overall acc. :  0.9512195
+val loss :  0.18098424561321735
+num_views 12
+epoch 27, step 1: train_loss 0.00236; train_acc 1.00000
+epoch 27, step 2: train_loss 0.04915; train_acc 1.00000
+epoch 27, step 3: train_loss 0.04920; train_acc 1.00000
+epoch 27, step 4: train_loss 0.25409; train_acc 0.87500
+epoch 27, step 5: train_loss 0.08763; train_acc 1.00000
+epoch 27, step 6: train_loss 0.07756; train_acc 1.00000
+epoch 27, step 7: train_loss 0.01563; train_acc 1.00000
+epoch 27, step 8: train_loss 0.02637; train_acc 1.00000
+epoch 27, step 9: train_loss 0.00548; train_acc 1.00000
+epoch 27, step 10: train_loss 0.01170; train_acc 1.00000
+epoch 27, step 11: train_loss 0.16977; train_acc 1.00000
+epoch 27, step 12: train_loss 0.02864; train_acc 1.00000
+epoch 27, step 13: train_loss 0.08470; train_acc 1.00000
+epoch 27, step 14: train_loss 0.09809; train_acc 1.00000
+epoch 27, step 15: train_loss 0.00218; train_acc 1.00000
+epoch 27, step 16: train_loss 0.02888; train_acc 1.00000
+epoch 27, step 17: train_loss 0.00192; train_acc 1.00000
+epoch 27, step 18: train_loss 0.04029; train_acc 1.00000
+epoch 27, step 19: train_loss 0.00086; train_acc 1.00000
+epoch 27, step 20: train_loss 0.16269; train_acc 1.00000
+epoch 27, step 21: train_loss 0.00190; train_acc 1.00000
+epoch 27, step 22: train_loss 0.00832; train_acc 1.00000
+epoch 27, step 23: train_loss 0.00684; train_acc 1.00000
+epoch 27, step 24: train_loss 0.00246; train_acc 1.00000
+epoch 27, step 25: train_loss 0.02003; train_acc 1.00000
+epoch 27, step 26: train_loss 0.01569; train_acc 1.00000
+epoch 27, step 27: train_loss 0.00071; train_acc 1.00000
+epoch 27, step 28: train_loss 0.05674; train_acc 1.00000
+epoch 27, step 29: train_loss 0.02213; train_acc 1.00000
+epoch 27, step 30: train_loss 0.00436; train_acc 1.00000
+epoch 27, step 31: train_loss 0.00045; train_acc 1.00000
+epoch 27, step 32: train_loss 0.01305; train_acc 1.00000
+epoch 27, step 33: train_loss 0.00235; train_acc 1.00000
+epoch 27, step 34: train_loss 0.10609; train_acc 0.87500
+epoch 27, step 35: train_loss 0.00138; train_acc 1.00000
+epoch 27, step 36: train_loss 0.05202; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9154946803457775
+val overall acc. :  0.94308937
+val loss :  0.17936284840106964
+num_views 12
+epoch 28, step 1: train_loss 0.00198; train_acc 1.00000
+epoch 28, step 2: train_loss 0.00444; train_acc 1.00000
+epoch 28, step 3: train_loss 0.00012; train_acc 1.00000
+epoch 28, step 4: train_loss 0.08187; train_acc 1.00000
+epoch 28, step 5: train_loss 0.06970; train_acc 1.00000
+epoch 28, step 6: train_loss 0.01943; train_acc 1.00000
+epoch 28, step 7: train_loss 0.10502; train_acc 1.00000
+epoch 28, step 8: train_loss 0.01205; train_acc 1.00000
+epoch 28, step 9: train_loss 0.00218; train_acc 1.00000
+epoch 28, step 10: train_loss 0.06076; train_acc 1.00000
+epoch 28, step 11: train_loss 0.01375; train_acc 1.00000
+epoch 28, step 12: train_loss 0.02182; train_acc 1.00000
+epoch 28, step 13: train_loss 0.01127; train_acc 1.00000
+epoch 28, step 14: train_loss 0.00129; train_acc 1.00000
+epoch 28, step 15: train_loss 0.01617; train_acc 1.00000
+epoch 28, step 16: train_loss 0.07426; train_acc 1.00000
+epoch 28, step 17: train_loss 0.02498; train_acc 1.00000
+epoch 28, step 18: train_loss 0.00373; train_acc 1.00000
+epoch 28, step 19: train_loss 0.02025; train_acc 1.00000
+epoch 28, step 20: train_loss 0.03448; train_acc 1.00000
+epoch 28, step 21: train_loss 0.03457; train_acc 1.00000
+epoch 28, step 22: train_loss 0.00333; train_acc 1.00000
+epoch 28, step 23: train_loss 0.00348; train_acc 1.00000
+epoch 28, step 24: train_loss 0.00988; train_acc 1.00000
+epoch 28, step 25: train_loss 0.07130; train_acc 1.00000
+epoch 28, step 26: train_loss 0.22281; train_acc 0.87500
+epoch 28, step 27: train_loss 0.01555; train_acc 1.00000
+epoch 28, step 28: train_loss 0.04071; train_acc 1.00000
+epoch 28, step 29: train_loss 0.00707; train_acc 1.00000
+epoch 28, step 30: train_loss 0.04490; train_acc 1.00000
+epoch 28, step 31: train_loss 0.16809; train_acc 0.87500
+epoch 28, step 32: train_loss 0.00834; train_acc 1.00000
+epoch 28, step 33: train_loss 0.23782; train_acc 0.87500
+epoch 28, step 34: train_loss 0.28456; train_acc 0.87500
+epoch 28, step 35: train_loss 0.00390; train_acc 1.00000
+epoch 28, step 36: train_loss 0.01989; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9268583167094139
+val overall acc. :  0.9512195
+val loss :  0.18334206007421017
+num_views 12
+epoch 29, step 1: train_loss 0.00197; train_acc 1.00000
+epoch 29, step 2: train_loss 0.04692; train_acc 1.00000
+epoch 29, step 3: train_loss 0.00060; train_acc 1.00000
+epoch 29, step 4: train_loss 0.02542; train_acc 1.00000
+epoch 29, step 5: train_loss 0.14591; train_acc 1.00000
+epoch 29, step 6: train_loss 0.02606; train_acc 1.00000
+epoch 29, step 7: train_loss 0.01630; train_acc 1.00000
+epoch 29, step 8: train_loss 0.00323; train_acc 1.00000
+epoch 29, step 9: train_loss 0.04947; train_acc 1.00000
+epoch 29, step 10: train_loss 0.01739; train_acc 1.00000
+epoch 29, step 11: train_loss 0.07071; train_acc 1.00000
+epoch 29, step 12: train_loss 0.00157; train_acc 1.00000
+epoch 29, step 13: train_loss 0.09489; train_acc 1.00000
+epoch 29, step 14: train_loss 0.00711; train_acc 1.00000
+epoch 29, step 15: train_loss 0.00649; train_acc 1.00000
+epoch 29, step 16: train_loss 0.19843; train_acc 0.87500
+epoch 29, step 17: train_loss 0.12791; train_acc 1.00000
+epoch 29, step 18: train_loss 0.13001; train_acc 1.00000
+epoch 29, step 19: train_loss 0.00625; train_acc 1.00000
+epoch 29, step 20: train_loss 0.01404; train_acc 1.00000
+epoch 29, step 21: train_loss 0.00184; train_acc 1.00000
+epoch 29, step 22: train_loss 0.11018; train_acc 0.87500
+epoch 29, step 23: train_loss 0.00406; train_acc 1.00000
+epoch 29, step 24: train_loss 0.01737; train_acc 1.00000
+epoch 29, step 25: train_loss 0.07520; train_acc 1.00000
+epoch 29, step 26: train_loss 0.00291; train_acc 1.00000
+epoch 29, step 27: train_loss 0.10329; train_acc 0.87500
+epoch 29, step 28: train_loss 0.03697; train_acc 1.00000
+epoch 29, step 29: train_loss 0.01131; train_acc 1.00000
+epoch 29, step 30: train_loss 0.00431; train_acc 1.00000
+epoch 29, step 31: train_loss 0.00716; train_acc 1.00000
+epoch 29, step 32: train_loss 0.23073; train_acc 0.87500
+epoch 29, step 33: train_loss 0.01788; train_acc 1.00000
+epoch 29, step 34: train_loss 0.02315; train_acc 1.00000
+epoch 29, step 35: train_loss 0.06278; train_acc 1.00000
+epoch 29, step 36: train_loss 0.01555; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9533045977011494
+val overall acc. :  0.96747965
+val loss :  0.18009739182889462
+num_views 12
+epoch 30, step 1: train_loss 0.02471; train_acc 1.00000
+epoch 30, step 2: train_loss 0.00109; train_acc 1.00000
+epoch 30, step 3: train_loss 0.01073; train_acc 1.00000
+epoch 30, step 4: train_loss 0.01092; train_acc 1.00000
+epoch 30, step 5: train_loss 0.00096; train_acc 1.00000
+epoch 30, step 6: train_loss 0.00237; train_acc 1.00000
+epoch 30, step 7: train_loss 0.00096; train_acc 1.00000
+epoch 30, step 8: train_loss 0.10479; train_acc 1.00000
+epoch 30, step 9: train_loss 0.06532; train_acc 1.00000
+epoch 30, step 10: train_loss 0.00653; train_acc 1.00000
+epoch 30, step 11: train_loss 0.01140; train_acc 1.00000
+epoch 30, step 12: train_loss 0.05906; train_acc 1.00000
+epoch 30, step 13: train_loss 0.04084; train_acc 1.00000
+epoch 30, step 14: train_loss 0.02656; train_acc 1.00000
+epoch 30, step 15: train_loss 0.16374; train_acc 0.87500
+epoch 30, step 16: train_loss 0.01209; train_acc 1.00000
+epoch 30, step 17: train_loss 0.00369; train_acc 1.00000
+epoch 30, step 18: train_loss 0.00402; train_acc 1.00000
+epoch 30, step 19: train_loss 0.09475; train_acc 0.87500
+epoch 30, step 20: train_loss 0.00499; train_acc 1.00000
+epoch 30, step 21: train_loss 0.14047; train_acc 0.87500
+epoch 30, step 22: train_loss 0.16523; train_acc 0.87500
+epoch 30, step 23: train_loss 0.00112; train_acc 1.00000
+epoch 30, step 24: train_loss 0.01316; train_acc 1.00000
+epoch 30, step 25: train_loss 0.00783; train_acc 1.00000
+epoch 30, step 26: train_loss 0.03527; train_acc 1.00000
+epoch 30, step 27: train_loss 0.01142; train_acc 1.00000
+epoch 30, step 28: train_loss 0.02744; train_acc 1.00000
+epoch 30, step 29: train_loss 0.00187; train_acc 1.00000
+epoch 30, step 30: train_loss 0.01998; train_acc 1.00000
+epoch 30, step 31: train_loss 0.07545; train_acc 1.00000
+epoch 30, step 32: train_loss 0.07757; train_acc 1.00000
+epoch 30, step 33: train_loss 0.01373; train_acc 1.00000
+epoch 30, step 34: train_loss 0.01386; train_acc 1.00000
+epoch 30, step 35: train_loss 0.04940; train_acc 1.00000
+epoch 30, step 36: train_loss 0.00370; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9336764985275956
+val overall acc. :  0.9512195
+val loss :  0.17688857701887173
+num_views 12
+epoch 31, step 1: train_loss 0.05703; train_acc 1.00000
+epoch 31, step 2: train_loss 0.15234; train_acc 0.87500
+epoch 31, step 3: train_loss 0.01278; train_acc 1.00000
+epoch 31, step 4: train_loss 0.01377; train_acc 1.00000
+epoch 31, step 5: train_loss 0.00480; train_acc 1.00000
+epoch 31, step 6: train_loss 0.00867; train_acc 1.00000
+epoch 31, step 7: train_loss 0.02806; train_acc 1.00000
+epoch 31, step 8: train_loss 0.01070; train_acc 1.00000
+epoch 31, step 9: train_loss 0.01308; train_acc 1.00000
+epoch 31, step 10: train_loss 0.01699; train_acc 1.00000
+epoch 31, step 11: train_loss 0.02185; train_acc 1.00000
+epoch 31, step 12: train_loss 0.00179; train_acc 1.00000
+epoch 31, step 13: train_loss 0.01548; train_acc 1.00000
+epoch 31, step 14: train_loss 0.01444; train_acc 1.00000
+epoch 31, step 15: train_loss 0.00630; train_acc 1.00000
+epoch 31, step 16: train_loss 0.24416; train_acc 0.87500
+epoch 31, step 17: train_loss 0.00572; train_acc 1.00000
+epoch 31, step 18: train_loss 0.03606; train_acc 1.00000
+epoch 31, step 19: train_loss 0.00092; train_acc 1.00000
+epoch 31, step 20: train_loss 0.00600; train_acc 1.00000
+epoch 31, step 21: train_loss 0.00204; train_acc 1.00000
+epoch 31, step 22: train_loss 0.00488; train_acc 1.00000
+epoch 31, step 23: train_loss 0.01467; train_acc 1.00000
+epoch 31, step 24: train_loss 0.04534; train_acc 1.00000
+epoch 31, step 25: train_loss 0.12772; train_acc 0.87500
+epoch 31, step 26: train_loss 0.00248; train_acc 1.00000
+epoch 31, step 27: train_loss 0.05960; train_acc 1.00000
+epoch 31, step 28: train_loss 0.05593; train_acc 1.00000
+epoch 31, step 29: train_loss 0.00861; train_acc 1.00000
+epoch 31, step 30: train_loss 0.00639; train_acc 1.00000
+epoch 31, step 31: train_loss 0.01368; train_acc 1.00000
+epoch 31, step 32: train_loss 0.01621; train_acc 1.00000
+epoch 31, step 33: train_loss 0.02296; train_acc 1.00000
+epoch 31, step 34: train_loss 0.09058; train_acc 1.00000
+epoch 31, step 35: train_loss 0.00102; train_acc 1.00000
+epoch 31, step 36: train_loss 0.02483; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.945040134891232
+val overall acc. :  0.9593496
+val loss :  0.18580343201756477
+num_views 12
+epoch 32, step 1: train_loss 0.00009; train_acc 1.00000
+epoch 32, step 2: train_loss 0.00241; train_acc 1.00000
+epoch 32, step 3: train_loss 0.00136; train_acc 1.00000
+epoch 32, step 4: train_loss 0.03457; train_acc 1.00000
+epoch 32, step 5: train_loss 0.01259; train_acc 1.00000
+epoch 32, step 6: train_loss 0.01267; train_acc 1.00000
+epoch 32, step 7: train_loss 0.00517; train_acc 1.00000
+epoch 32, step 8: train_loss 0.01943; train_acc 1.00000
+epoch 32, step 9: train_loss 0.00084; train_acc 1.00000
+epoch 32, step 10: train_loss 0.00196; train_acc 1.00000
+epoch 32, step 11: train_loss 0.07751; train_acc 1.00000
+epoch 32, step 12: train_loss 0.03227; train_acc 1.00000
+epoch 32, step 13: train_loss 0.02376; train_acc 1.00000
+epoch 32, step 14: train_loss 0.00707; train_acc 1.00000
+epoch 32, step 15: train_loss 0.00782; train_acc 1.00000
+epoch 32, step 16: train_loss 0.02397; train_acc 1.00000
+epoch 32, step 17: train_loss 0.00304; train_acc 1.00000
+epoch 32, step 18: train_loss 0.00334; train_acc 1.00000
+epoch 32, step 19: train_loss 0.00999; train_acc 1.00000
+epoch 32, step 20: train_loss 0.03393; train_acc 1.00000
+epoch 32, step 21: train_loss 0.01039; train_acc 1.00000
+epoch 32, step 22: train_loss 0.00464; train_acc 1.00000
+epoch 32, step 23: train_loss 0.01265; train_acc 1.00000
+epoch 32, step 24: train_loss 0.01094; train_acc 1.00000
+epoch 32, step 25: train_loss 0.09526; train_acc 1.00000
+epoch 32, step 26: train_loss 0.00467; train_acc 1.00000
+epoch 32, step 27: train_loss 0.02408; train_acc 1.00000
+epoch 32, step 28: train_loss 0.00610; train_acc 1.00000
+epoch 32, step 29: train_loss 0.00921; train_acc 1.00000
+epoch 32, step 30: train_loss 0.03246; train_acc 1.00000
+epoch 32, step 31: train_loss 0.00044; train_acc 1.00000
+epoch 32, step 32: train_loss 0.01181; train_acc 1.00000
+epoch 32, step 33: train_loss 0.04490; train_acc 1.00000
+epoch 32, step 34: train_loss 0.01780; train_acc 1.00000
+epoch 32, step 35: train_loss 0.00095; train_acc 1.00000
+epoch 32, step 36: train_loss 0.05603; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9533045977011494
+val overall acc. :  0.96747965
+val loss :  0.170860367516525
+num_views 12
+epoch 33, step 1: train_loss 0.01393; train_acc 1.00000
+epoch 33, step 2: train_loss 0.01137; train_acc 1.00000
+epoch 33, step 3: train_loss 0.01813; train_acc 1.00000
+epoch 33, step 4: train_loss 0.01545; train_acc 1.00000
+epoch 33, step 5: train_loss 0.05146; train_acc 1.00000
+epoch 33, step 6: train_loss 0.02105; train_acc 1.00000
+epoch 33, step 7: train_loss 0.01825; train_acc 1.00000
+epoch 33, step 8: train_loss 0.02073; train_acc 1.00000
+epoch 33, step 9: train_loss 0.00493; train_acc 1.00000
+epoch 33, step 10: train_loss 0.00177; train_acc 1.00000
+epoch 33, step 11: train_loss 0.00925; train_acc 1.00000
+epoch 33, step 12: train_loss 0.05355; train_acc 1.00000
+epoch 33, step 13: train_loss 0.00149; train_acc 1.00000
+epoch 33, step 14: train_loss 0.02184; train_acc 1.00000
+epoch 33, step 15: train_loss 0.00025; train_acc 1.00000
+epoch 33, step 16: train_loss 0.38195; train_acc 0.87500
+epoch 33, step 17: train_loss 0.00332; train_acc 1.00000
+epoch 33, step 18: train_loss 0.00313; train_acc 1.00000
+epoch 33, step 19: train_loss 0.02376; train_acc 1.00000
+epoch 33, step 20: train_loss 0.00586; train_acc 1.00000
+epoch 33, step 21: train_loss 0.00021; train_acc 1.00000
+epoch 33, step 22: train_loss 0.02413; train_acc 1.00000
+epoch 33, step 23: train_loss 0.01082; train_acc 1.00000
+epoch 33, step 24: train_loss 0.00836; train_acc 1.00000
+epoch 33, step 25: train_loss 0.03200; train_acc 1.00000
+epoch 33, step 26: train_loss 0.00050; train_acc 1.00000
+epoch 33, step 27: train_loss 0.00034; train_acc 1.00000
+epoch 33, step 28: train_loss 0.01488; train_acc 1.00000
+epoch 33, step 29: train_loss 0.00935; train_acc 1.00000
+epoch 33, step 30: train_loss 0.00490; train_acc 1.00000
+epoch 33, step 31: train_loss 0.03316; train_acc 1.00000
+epoch 33, step 32: train_loss 0.43395; train_acc 0.87500
+epoch 33, step 33: train_loss 0.00385; train_acc 1.00000
+epoch 33, step 34: train_loss 0.00182; train_acc 1.00000
+epoch 33, step 35: train_loss 0.01696; train_acc 1.00000
+epoch 33, step 36: train_loss 0.00022; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.1803335715085268
+num_views 12
+epoch 34, step 1: train_loss 0.00029; train_acc 1.00000
+epoch 34, step 2: train_loss 0.05219; train_acc 1.00000
+epoch 34, step 3: train_loss 0.01892; train_acc 1.00000
+epoch 34, step 4: train_loss 0.01484; train_acc 1.00000
+epoch 34, step 5: train_loss 0.01761; train_acc 1.00000
+epoch 34, step 6: train_loss 0.00317; train_acc 1.00000
+epoch 34, step 7: train_loss 0.01610; train_acc 1.00000
+epoch 34, step 8: train_loss 0.07879; train_acc 1.00000
+epoch 34, step 9: train_loss 0.00754; train_acc 1.00000
+epoch 34, step 10: train_loss 0.00246; train_acc 1.00000
+epoch 34, step 11: train_loss 0.11003; train_acc 0.87500
+epoch 34, step 12: train_loss 0.01930; train_acc 1.00000
+epoch 34, step 13: train_loss 0.00438; train_acc 1.00000
+epoch 34, step 14: train_loss 0.00034; train_acc 1.00000
+epoch 34, step 15: train_loss 0.00628; train_acc 1.00000
+epoch 34, step 16: train_loss 0.02485; train_acc 1.00000
+epoch 34, step 17: train_loss 0.18152; train_acc 0.87500
+epoch 34, step 18: train_loss 0.00487; train_acc 1.00000
+epoch 34, step 19: train_loss 0.01184; train_acc 1.00000
+epoch 34, step 20: train_loss 0.00157; train_acc 1.00000
+epoch 34, step 21: train_loss 0.04507; train_acc 1.00000
+epoch 34, step 22: train_loss 0.01383; train_acc 1.00000
+epoch 34, step 23: train_loss 0.00295; train_acc 1.00000
+epoch 34, step 24: train_loss 0.02595; train_acc 1.00000
+epoch 34, step 25: train_loss 0.00995; train_acc 1.00000
+epoch 34, step 26: train_loss 0.00016; train_acc 1.00000
+epoch 34, step 27: train_loss 0.05652; train_acc 1.00000
+epoch 34, step 28: train_loss 0.04190; train_acc 1.00000
+epoch 34, step 29: train_loss 0.01036; train_acc 1.00000
+epoch 34, step 30: train_loss 0.02565; train_acc 1.00000
+epoch 34, step 31: train_loss 0.00646; train_acc 1.00000
+epoch 34, step 32: train_loss 0.00625; train_acc 1.00000
+epoch 34, step 33: train_loss 0.01063; train_acc 1.00000
+epoch 34, step 34: train_loss 0.05791; train_acc 1.00000
+epoch 34, step 35: train_loss 0.06018; train_acc 1.00000
+epoch 34, step 36: train_loss 0.03197; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9268583167094139
+val overall acc. :  0.9512195
+val loss :  0.1813418896249459
+num_views 12
+epoch 35, step 1: train_loss 0.01410; train_acc 1.00000
+epoch 35, step 2: train_loss 0.00866; train_acc 1.00000
+epoch 35, step 3: train_loss 0.00064; train_acc 1.00000
+epoch 35, step 4: train_loss 0.00652; train_acc 1.00000
+epoch 35, step 5: train_loss 0.00499; train_acc 1.00000
+epoch 35, step 6: train_loss 0.00217; train_acc 1.00000
+epoch 35, step 7: train_loss 0.03977; train_acc 1.00000
+epoch 35, step 8: train_loss 0.03272; train_acc 1.00000
+epoch 35, step 9: train_loss 0.04598; train_acc 1.00000
+epoch 35, step 10: train_loss 0.04287; train_acc 1.00000
+epoch 35, step 11: train_loss 0.00106; train_acc 1.00000
+epoch 35, step 12: train_loss 0.01603; train_acc 1.00000
+epoch 35, step 13: train_loss 0.08297; train_acc 1.00000
+epoch 35, step 14: train_loss 0.01398; train_acc 1.00000
+epoch 35, step 15: train_loss 0.08196; train_acc 1.00000
+epoch 35, step 16: train_loss 0.00641; train_acc 1.00000
+epoch 35, step 17: train_loss 0.21654; train_acc 0.87500
+epoch 35, step 18: train_loss 0.10727; train_acc 0.87500
+epoch 35, step 19: train_loss 0.00686; train_acc 1.00000
+epoch 35, step 20: train_loss 0.00193; train_acc 1.00000
+epoch 35, step 21: train_loss 0.01164; train_acc 1.00000
+epoch 35, step 22: train_loss 0.00757; train_acc 1.00000
+epoch 35, step 23: train_loss 0.00675; train_acc 1.00000
+epoch 35, step 24: train_loss 0.22082; train_acc 0.87500
+epoch 35, step 25: train_loss 0.00048; train_acc 1.00000
+epoch 35, step 26: train_loss 0.00413; train_acc 1.00000
+epoch 35, step 27: train_loss 0.00096; train_acc 1.00000
+epoch 35, step 28: train_loss 0.01033; train_acc 1.00000
+epoch 35, step 29: train_loss 0.07046; train_acc 1.00000
+epoch 35, step 30: train_loss 0.00897; train_acc 1.00000
+epoch 35, step 31: train_loss 0.02072; train_acc 1.00000
+epoch 35, step 32: train_loss 0.00553; train_acc 1.00000
+epoch 35, step 33: train_loss 0.11053; train_acc 1.00000
+epoch 35, step 34: train_loss 0.03819; train_acc 1.00000
+epoch 35, step 35: train_loss 0.00033; train_acc 1.00000
+epoch 35, step 36: train_loss 0.00660; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9268583167094139
+val overall acc. :  0.9512195
+val loss :  0.18138073322643322
+num_views 12
+epoch 36, step 1: train_loss 0.00367; train_acc 1.00000
+epoch 36, step 2: train_loss 0.06738; train_acc 1.00000
+epoch 36, step 3: train_loss 0.02122; train_acc 1.00000
+epoch 36, step 4: train_loss 0.00893; train_acc 1.00000
+epoch 36, step 5: train_loss 0.02606; train_acc 1.00000
+epoch 36, step 6: train_loss 0.00446; train_acc 1.00000
+epoch 36, step 7: train_loss 0.00668; train_acc 1.00000
+epoch 36, step 8: train_loss 0.00190; train_acc 1.00000
+epoch 36, step 9: train_loss 0.16803; train_acc 0.87500
+epoch 36, step 10: train_loss 0.00416; train_acc 1.00000
+epoch 36, step 11: train_loss 0.00068; train_acc 1.00000
+epoch 36, step 12: train_loss 0.00128; train_acc 1.00000
+epoch 36, step 13: train_loss 0.02136; train_acc 1.00000
+epoch 36, step 14: train_loss 0.06100; train_acc 1.00000
+epoch 36, step 15: train_loss 0.04006; train_acc 1.00000
+epoch 36, step 16: train_loss 0.05342; train_acc 1.00000
+epoch 36, step 17: train_loss 0.04315; train_acc 1.00000
+epoch 36, step 18: train_loss 0.01823; train_acc 1.00000
+epoch 36, step 19: train_loss 0.00010; train_acc 1.00000
+epoch 36, step 20: train_loss 0.45068; train_acc 0.87500
+epoch 36, step 21: train_loss 0.04965; train_acc 1.00000
+epoch 36, step 22: train_loss 0.01695; train_acc 1.00000
+epoch 36, step 23: train_loss 0.01950; train_acc 1.00000
+epoch 36, step 24: train_loss 0.03692; train_acc 1.00000
+epoch 36, step 25: train_loss 0.00370; train_acc 1.00000
+epoch 36, step 26: train_loss 0.00623; train_acc 1.00000
+epoch 36, step 27: train_loss 0.00039; train_acc 1.00000
+epoch 36, step 28: train_loss 0.00238; train_acc 1.00000
+epoch 36, step 29: train_loss 0.03287; train_acc 1.00000
+epoch 36, step 30: train_loss 0.00835; train_acc 1.00000
+epoch 36, step 31: train_loss 0.00124; train_acc 1.00000
+epoch 36, step 32: train_loss 0.00509; train_acc 1.00000
+epoch 36, step 33: train_loss 0.14606; train_acc 0.87500
+epoch 36, step 34: train_loss 0.04143; train_acc 1.00000
+epoch 36, step 35: train_loss 0.00394; train_acc 1.00000
+epoch 36, step 36: train_loss 0.00400; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9268583167094139
+val overall acc. :  0.9512195
+val loss :  0.1903648252291532
+num_views 12
+epoch 37, step 1: train_loss 0.10848; train_acc 0.87500
+epoch 37, step 2: train_loss 0.06438; train_acc 1.00000
+epoch 37, step 3: train_loss 0.00468; train_acc 1.00000
+epoch 37, step 4: train_loss 0.02358; train_acc 1.00000
+epoch 37, step 5: train_loss 0.02566; train_acc 1.00000
+epoch 37, step 6: train_loss 0.01393; train_acc 1.00000
+epoch 37, step 7: train_loss 0.00533; train_acc 1.00000
+epoch 37, step 8: train_loss 0.00976; train_acc 1.00000
+epoch 37, step 9: train_loss 0.00710; train_acc 1.00000
+epoch 37, step 10: train_loss 0.00024; train_acc 1.00000
+epoch 37, step 11: train_loss 0.00863; train_acc 1.00000
+epoch 37, step 12: train_loss 0.01904; train_acc 1.00000
+epoch 37, step 13: train_loss 0.01026; train_acc 1.00000
+epoch 37, step 14: train_loss 0.01126; train_acc 1.00000
+epoch 37, step 15: train_loss 0.02020; train_acc 1.00000
+epoch 37, step 16: train_loss 0.01647; train_acc 1.00000
+epoch 37, step 17: train_loss 0.00601; train_acc 1.00000
+epoch 37, step 18: train_loss 0.10248; train_acc 1.00000
+epoch 37, step 19: train_loss 0.03128; train_acc 1.00000
+epoch 37, step 20: train_loss 0.12371; train_acc 0.87500
+epoch 37, step 21: train_loss 0.02498; train_acc 1.00000
+epoch 37, step 22: train_loss 0.02585; train_acc 1.00000
+epoch 37, step 23: train_loss 0.08638; train_acc 1.00000
+epoch 37, step 24: train_loss 0.00185; train_acc 1.00000
+epoch 37, step 25: train_loss 0.02036; train_acc 1.00000
+epoch 37, step 26: train_loss 0.00027; train_acc 1.00000
+epoch 37, step 27: train_loss 0.04793; train_acc 1.00000
+epoch 37, step 28: train_loss 0.00294; train_acc 1.00000
+epoch 37, step 29: train_loss 0.03238; train_acc 1.00000
+epoch 37, step 30: train_loss 0.00456; train_acc 1.00000
+epoch 37, step 31: train_loss 0.06029; train_acc 1.00000
+epoch 37, step 32: train_loss 0.00030; train_acc 1.00000
+epoch 37, step 33: train_loss 0.00357; train_acc 1.00000
+epoch 37, step 34: train_loss 0.03708; train_acc 1.00000
+epoch 37, step 35: train_loss 0.00184; train_acc 1.00000
+epoch 37, step 36: train_loss 0.00339; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.18423268509377522
+num_views 12
+epoch 38, step 1: train_loss 0.08396; train_acc 1.00000
+epoch 38, step 2: train_loss 0.24997; train_acc 0.87500
+epoch 38, step 3: train_loss 0.01886; train_acc 1.00000
+epoch 38, step 4: train_loss 0.00934; train_acc 1.00000
+epoch 38, step 5: train_loss 0.01771; train_acc 1.00000
+epoch 38, step 6: train_loss 0.00090; train_acc 1.00000
+epoch 38, step 7: train_loss 0.00109; train_acc 1.00000
+epoch 38, step 8: train_loss 0.09372; train_acc 1.00000
+epoch 38, step 9: train_loss 0.00370; train_acc 1.00000
+epoch 38, step 10: train_loss 0.06066; train_acc 1.00000
+epoch 38, step 11: train_loss 0.01285; train_acc 1.00000
+epoch 38, step 12: train_loss 0.04962; train_acc 1.00000
+epoch 38, step 13: train_loss 0.05158; train_acc 1.00000
+epoch 38, step 14: train_loss 0.02943; train_acc 1.00000
+epoch 38, step 15: train_loss 0.00039; train_acc 1.00000
+epoch 38, step 16: train_loss 0.00950; train_acc 1.00000
+epoch 38, step 17: train_loss 0.04645; train_acc 1.00000
+epoch 38, step 18: train_loss 0.02475; train_acc 1.00000
+epoch 38, step 19: train_loss 0.00723; train_acc 1.00000
+epoch 38, step 20: train_loss 0.01060; train_acc 1.00000
+epoch 38, step 21: train_loss 0.00268; train_acc 1.00000
+epoch 38, step 22: train_loss 0.09744; train_acc 1.00000
+epoch 38, step 23: train_loss 0.02472; train_acc 1.00000
+epoch 38, step 24: train_loss 0.01512; train_acc 1.00000
+epoch 38, step 25: train_loss 0.00200; train_acc 1.00000
+epoch 38, step 26: train_loss 0.01456; train_acc 1.00000
+epoch 38, step 27: train_loss 0.05252; train_acc 1.00000
+epoch 38, step 28: train_loss 0.00060; train_acc 1.00000
+epoch 38, step 29: train_loss 0.00005; train_acc 1.00000
+epoch 38, step 30: train_loss 0.01086; train_acc 1.00000
+epoch 38, step 31: train_loss 0.00280; train_acc 1.00000
+epoch 38, step 32: train_loss 0.03442; train_acc 1.00000
+epoch 38, step 33: train_loss 0.00174; train_acc 1.00000
+epoch 38, step 34: train_loss 0.01924; train_acc 1.00000
+epoch 38, step 35: train_loss 0.00436; train_acc 1.00000
+epoch 38, step 36: train_loss 0.05563; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.18607023358345032
+num_views 12
+epoch 39, step 1: train_loss 0.23245; train_acc 0.87500
+epoch 39, step 2: train_loss 0.00731; train_acc 1.00000
+epoch 39, step 3: train_loss 0.01067; train_acc 1.00000
+epoch 39, step 4: train_loss 0.05599; train_acc 1.00000
+epoch 39, step 5: train_loss 0.05734; train_acc 1.00000
+epoch 39, step 6: train_loss 0.00067; train_acc 1.00000
+epoch 39, step 7: train_loss 0.00199; train_acc 1.00000
+epoch 39, step 8: train_loss 0.01808; train_acc 1.00000
+epoch 39, step 9: train_loss 0.00236; train_acc 1.00000
+epoch 39, step 10: train_loss 0.01806; train_acc 1.00000
+epoch 39, step 11: train_loss 0.00229; train_acc 1.00000
+epoch 39, step 12: train_loss 0.06155; train_acc 1.00000
+epoch 39, step 13: train_loss 0.03783; train_acc 1.00000
+epoch 39, step 14: train_loss 0.00105; train_acc 1.00000
+epoch 39, step 15: train_loss 0.13298; train_acc 1.00000
+epoch 39, step 16: train_loss 0.00373; train_acc 1.00000
+epoch 39, step 17: train_loss 0.01629; train_acc 1.00000
+epoch 39, step 18: train_loss 0.01265; train_acc 1.00000
+epoch 39, step 19: train_loss 0.01599; train_acc 1.00000
+epoch 39, step 20: train_loss 0.06633; train_acc 1.00000
+epoch 39, step 21: train_loss 0.00394; train_acc 1.00000
+epoch 39, step 22: train_loss 0.07196; train_acc 1.00000
+epoch 39, step 23: train_loss 0.00175; train_acc 1.00000
+epoch 39, step 24: train_loss 0.00354; train_acc 1.00000
+epoch 39, step 25: train_loss 0.00153; train_acc 1.00000
+epoch 39, step 26: train_loss 0.02361; train_acc 1.00000
+epoch 39, step 27: train_loss 0.00028; train_acc 1.00000
+epoch 39, step 28: train_loss 0.11108; train_acc 0.87500
+epoch 39, step 29: train_loss 0.03591; train_acc 1.00000
+epoch 39, step 30: train_loss 0.00074; train_acc 1.00000
+epoch 39, step 31: train_loss 0.01621; train_acc 1.00000
+epoch 39, step 32: train_loss 0.03806; train_acc 1.00000
+epoch 39, step 33: train_loss 0.00660; train_acc 1.00000
+epoch 39, step 34: train_loss 0.00492; train_acc 1.00000
+epoch 39, step 35: train_loss 0.00844; train_acc 1.00000
+epoch 39, step 36: train_loss 0.00196; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.1833391785621643
+num_views 12
+epoch 40, step 1: train_loss 0.06816; train_acc 1.00000
+epoch 40, step 2: train_loss 0.02529; train_acc 1.00000
+epoch 40, step 3: train_loss 0.23255; train_acc 0.87500
+epoch 40, step 4: train_loss 0.00033; train_acc 1.00000
+epoch 40, step 5: train_loss 0.01636; train_acc 1.00000
+epoch 40, step 6: train_loss 0.00131; train_acc 1.00000
+epoch 40, step 7: train_loss 0.00415; train_acc 1.00000
+epoch 40, step 8: train_loss 0.01215; train_acc 1.00000
+epoch 40, step 9: train_loss 0.00448; train_acc 1.00000
+epoch 40, step 10: train_loss 0.00142; train_acc 1.00000
+epoch 40, step 11: train_loss 0.00197; train_acc 1.00000
+epoch 40, step 12: train_loss 0.03495; train_acc 1.00000
+epoch 40, step 13: train_loss 0.00010; train_acc 1.00000
+epoch 40, step 14: train_loss 0.02843; train_acc 1.00000
+epoch 40, step 15: train_loss 0.01219; train_acc 1.00000
+epoch 40, step 16: train_loss 0.00563; train_acc 1.00000
+epoch 40, step 17: train_loss 0.04189; train_acc 1.00000
+epoch 40, step 18: train_loss 0.00560; train_acc 1.00000
+epoch 40, step 19: train_loss 0.00761; train_acc 1.00000
+epoch 40, step 20: train_loss 0.06470; train_acc 1.00000
+epoch 40, step 21: train_loss 0.14555; train_acc 1.00000
+epoch 40, step 22: train_loss 0.00803; train_acc 1.00000
+epoch 40, step 23: train_loss 0.00780; train_acc 1.00000
+epoch 40, step 24: train_loss 0.01326; train_acc 1.00000
+epoch 40, step 25: train_loss 0.02611; train_acc 1.00000
+epoch 40, step 26: train_loss 0.03076; train_acc 1.00000
+epoch 40, step 27: train_loss 0.00492; train_acc 1.00000
+epoch 40, step 28: train_loss 0.00244; train_acc 1.00000
+epoch 40, step 29: train_loss 0.03567; train_acc 1.00000
+epoch 40, step 30: train_loss 0.00152; train_acc 1.00000
+epoch 40, step 31: train_loss 0.13410; train_acc 0.87500
+epoch 40, step 32: train_loss 0.00909; train_acc 1.00000
+epoch 40, step 33: train_loss 0.02031; train_acc 1.00000
+epoch 40, step 34: train_loss 0.03551; train_acc 1.00000
+epoch 40, step 35: train_loss 0.00384; train_acc 1.00000
+epoch 40, step 36: train_loss 0.00332; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.173126133158803
+num_views 12
+epoch 41, step 1: train_loss 0.11125; train_acc 0.87500
+epoch 41, step 2: train_loss 0.03184; train_acc 1.00000
+epoch 41, step 3: train_loss 0.00590; train_acc 1.00000
+epoch 41, step 4: train_loss 0.00282; train_acc 1.00000
+epoch 41, step 5: train_loss 0.05762; train_acc 1.00000
+epoch 41, step 6: train_loss 0.01635; train_acc 1.00000
+epoch 41, step 7: train_loss 0.03152; train_acc 1.00000
+epoch 41, step 8: train_loss 0.00090; train_acc 1.00000
+epoch 41, step 9: train_loss 0.00823; train_acc 1.00000
+epoch 41, step 10: train_loss 0.02173; train_acc 1.00000
+epoch 41, step 11: train_loss 0.03345; train_acc 1.00000
+epoch 41, step 12: train_loss 0.00332; train_acc 1.00000
+epoch 41, step 13: train_loss 0.01684; train_acc 1.00000
+epoch 41, step 14: train_loss 0.01712; train_acc 1.00000
+epoch 41, step 15: train_loss 0.00033; train_acc 1.00000
+epoch 41, step 16: train_loss 0.02325; train_acc 1.00000
+epoch 41, step 17: train_loss 0.00172; train_acc 1.00000
+epoch 41, step 18: train_loss 0.06504; train_acc 1.00000
+epoch 41, step 19: train_loss 0.03136; train_acc 1.00000
+epoch 41, step 20: train_loss 0.04779; train_acc 1.00000
+epoch 41, step 21: train_loss 0.03437; train_acc 1.00000
+epoch 41, step 22: train_loss 0.00872; train_acc 1.00000
+epoch 41, step 23: train_loss 0.00574; train_acc 1.00000
+epoch 41, step 24: train_loss 0.01273; train_acc 1.00000
+epoch 41, step 25: train_loss 0.07431; train_acc 1.00000
+epoch 41, step 26: train_loss 0.04275; train_acc 1.00000
+epoch 41, step 27: train_loss 0.06303; train_acc 1.00000
+epoch 41, step 28: train_loss 0.02479; train_acc 1.00000
+epoch 41, step 29: train_loss 0.05095; train_acc 1.00000
+epoch 41, step 30: train_loss 0.00308; train_acc 1.00000
+epoch 41, step 31: train_loss 0.04059; train_acc 1.00000
+epoch 41, step 32: train_loss 0.00672; train_acc 1.00000
+epoch 41, step 33: train_loss 0.00310; train_acc 1.00000
+epoch 41, step 34: train_loss 0.00172; train_acc 1.00000
+epoch 41, step 35: train_loss 0.07943; train_acc 1.00000
+epoch 41, step 36: train_loss 0.00192; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9319879832810867
+val overall acc. :  0.9512195
+val loss :  0.17381306861852863
+num_views 12
+epoch 42, step 1: train_loss 0.00983; train_acc 1.00000
+epoch 42, step 2: train_loss 0.00623; train_acc 1.00000
+epoch 42, step 3: train_loss 0.02353; train_acc 1.00000
+epoch 42, step 4: train_loss 0.01269; train_acc 1.00000
+epoch 42, step 5: train_loss 0.00122; train_acc 1.00000
+epoch 42, step 6: train_loss 0.00272; train_acc 1.00000
+epoch 42, step 7: train_loss 0.00619; train_acc 1.00000
+epoch 42, step 8: train_loss 0.01027; train_acc 1.00000
+epoch 42, step 9: train_loss 0.17576; train_acc 0.87500
+epoch 42, step 10: train_loss 0.00139; train_acc 1.00000
+epoch 42, step 11: train_loss 0.00423; train_acc 1.00000
+epoch 42, step 12: train_loss 0.03031; train_acc 1.00000
+epoch 42, step 13: train_loss 0.15857; train_acc 0.87500
+epoch 42, step 14: train_loss 0.00962; train_acc 1.00000
+epoch 42, step 15: train_loss 0.00693; train_acc 1.00000
+epoch 42, step 16: train_loss 0.00533; train_acc 1.00000
+epoch 42, step 17: train_loss 0.00529; train_acc 1.00000
+epoch 42, step 18: train_loss 0.01970; train_acc 1.00000
+epoch 42, step 19: train_loss 0.42162; train_acc 0.87500
+epoch 42, step 20: train_loss 0.00111; train_acc 1.00000
+epoch 42, step 21: train_loss 0.01089; train_acc 1.00000
+epoch 42, step 22: train_loss 0.03652; train_acc 1.00000
+epoch 42, step 23: train_loss 0.02752; train_acc 1.00000
+epoch 42, step 24: train_loss 0.00082; train_acc 1.00000
+epoch 42, step 25: train_loss 0.04647; train_acc 1.00000
+epoch 42, step 26: train_loss 0.11958; train_acc 0.87500
+epoch 42, step 27: train_loss 0.00031; train_acc 1.00000
+epoch 42, step 28: train_loss 0.01255; train_acc 1.00000
+epoch 42, step 29: train_loss 0.00135; train_acc 1.00000
+epoch 42, step 30: train_loss 0.03653; train_acc 1.00000
+epoch 42, step 31: train_loss 0.01207; train_acc 1.00000
+epoch 42, step 32: train_loss 0.01493; train_acc 1.00000
+epoch 42, step 33: train_loss 0.02069; train_acc 1.00000
+epoch 42, step 34: train_loss 0.02118; train_acc 1.00000
+epoch 42, step 35: train_loss 0.00168; train_acc 1.00000
+epoch 42, step 36: train_loss 0.00038; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9268583167094139
+val overall acc. :  0.9512195
+val loss :  0.17414696390414974
+num_views 12
+epoch 43, step 1: train_loss 0.00941; train_acc 1.00000
+epoch 43, step 2: train_loss 0.01863; train_acc 1.00000
+epoch 43, step 3: train_loss 0.06514; train_acc 1.00000
+epoch 43, step 4: train_loss 0.00218; train_acc 1.00000
+epoch 43, step 5: train_loss 0.04147; train_acc 1.00000
+epoch 43, step 6: train_loss 0.00370; train_acc 1.00000
+epoch 43, step 7: train_loss 0.05857; train_acc 1.00000
+epoch 43, step 8: train_loss 0.03343; train_acc 1.00000
+epoch 43, step 9: train_loss 0.09929; train_acc 1.00000
+epoch 43, step 10: train_loss 0.00534; train_acc 1.00000
+epoch 43, step 11: train_loss 0.13608; train_acc 0.87500
+epoch 43, step 12: train_loss 0.00405; train_acc 1.00000
+epoch 43, step 13: train_loss 0.01651; train_acc 1.00000
+epoch 43, step 14: train_loss 0.00453; train_acc 1.00000
+epoch 43, step 15: train_loss 0.00240; train_acc 1.00000
+epoch 43, step 16: train_loss 0.00556; train_acc 1.00000
+epoch 43, step 17: train_loss 0.05338; train_acc 1.00000
+epoch 43, step 18: train_loss 0.05184; train_acc 1.00000
+epoch 43, step 19: train_loss 0.01249; train_acc 1.00000
+epoch 43, step 20: train_loss 0.16141; train_acc 0.87500
+epoch 43, step 21: train_loss 0.00424; train_acc 1.00000
+epoch 43, step 22: train_loss 0.01326; train_acc 1.00000
+epoch 43, step 23: train_loss 0.00126; train_acc 1.00000
+epoch 43, step 24: train_loss 0.00861; train_acc 1.00000
+epoch 43, step 25: train_loss 0.00569; train_acc 1.00000
+epoch 43, step 26: train_loss 0.00189; train_acc 1.00000
+epoch 43, step 27: train_loss 0.03653; train_acc 1.00000
+epoch 43, step 28: train_loss 0.00124; train_acc 1.00000
+epoch 43, step 29: train_loss 0.01082; train_acc 1.00000
+epoch 43, step 30: train_loss 0.01187; train_acc 1.00000
+epoch 43, step 31: train_loss 0.00022; train_acc 1.00000
+epoch 43, step 32: train_loss 0.02032; train_acc 1.00000
+epoch 43, step 33: train_loss 0.07049; train_acc 1.00000
+epoch 43, step 34: train_loss 0.06374; train_acc 1.00000
+epoch 43, step 35: train_loss 0.00388; train_acc 1.00000
+epoch 43, step 36: train_loss 0.00226; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.17755044500017902
+num_views 12
+epoch 44, step 1: train_loss 0.10541; train_acc 0.87500
+epoch 44, step 2: train_loss 0.00124; train_acc 1.00000
+epoch 44, step 3: train_loss 0.00851; train_acc 1.00000
+epoch 44, step 4: train_loss 0.03192; train_acc 1.00000
+epoch 44, step 5: train_loss 0.29177; train_acc 0.87500
+epoch 44, step 6: train_loss 0.00487; train_acc 1.00000
+epoch 44, step 7: train_loss 0.00319; train_acc 1.00000
+epoch 44, step 8: train_loss 0.00478; train_acc 1.00000
+epoch 44, step 9: train_loss 0.01127; train_acc 1.00000
+epoch 44, step 10: train_loss 0.00889; train_acc 1.00000
+epoch 44, step 11: train_loss 0.08631; train_acc 1.00000
+epoch 44, step 12: train_loss 0.02151; train_acc 1.00000
+epoch 44, step 13: train_loss 0.00638; train_acc 1.00000
+epoch 44, step 14: train_loss 0.00706; train_acc 1.00000
+epoch 44, step 15: train_loss 0.00190; train_acc 1.00000
+epoch 44, step 16: train_loss 0.00047; train_acc 1.00000
+epoch 44, step 17: train_loss 0.02493; train_acc 1.00000
+epoch 44, step 18: train_loss 0.00953; train_acc 1.00000
+epoch 44, step 19: train_loss 0.09375; train_acc 1.00000
+epoch 44, step 20: train_loss 0.10078; train_acc 1.00000
+epoch 44, step 21: train_loss 0.01427; train_acc 1.00000
+epoch 44, step 22: train_loss 0.00504; train_acc 1.00000
+epoch 44, step 23: train_loss 0.13321; train_acc 1.00000
+epoch 44, step 24: train_loss 0.10448; train_acc 0.87500
+epoch 44, step 25: train_loss 0.00095; train_acc 1.00000
+epoch 44, step 26: train_loss 0.00580; train_acc 1.00000
+epoch 44, step 27: train_loss 0.05432; train_acc 1.00000
+epoch 44, step 28: train_loss 0.04233; train_acc 1.00000
+epoch 44, step 29: train_loss 0.00547; train_acc 1.00000
+epoch 44, step 30: train_loss 0.01079; train_acc 1.00000
+epoch 44, step 31: train_loss 0.26364; train_acc 0.87500
+epoch 44, step 32: train_loss 0.00090; train_acc 1.00000
+epoch 44, step 33: train_loss 0.01572; train_acc 1.00000
+epoch 44, step 34: train_loss 0.00666; train_acc 1.00000
+epoch 44, step 35: train_loss 0.00860; train_acc 1.00000
+epoch 44, step 36: train_loss 0.04304; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9268583167094139
+val overall acc. :  0.9512195
+val loss :  0.18463040329515934
+num_views 12
+epoch 45, step 1: train_loss 0.27244; train_acc 0.87500
+epoch 45, step 2: train_loss 0.09260; train_acc 0.87500
+epoch 45, step 3: train_loss 0.05269; train_acc 1.00000
+epoch 45, step 4: train_loss 0.02478; train_acc 1.00000
+epoch 45, step 5: train_loss 0.02355; train_acc 1.00000
+epoch 45, step 6: train_loss 0.13754; train_acc 0.87500
+epoch 45, step 7: train_loss 0.01465; train_acc 1.00000
+epoch 45, step 8: train_loss 0.01450; train_acc 1.00000
+epoch 45, step 9: train_loss 0.04105; train_acc 1.00000
+epoch 45, step 10: train_loss 0.00214; train_acc 1.00000
+epoch 45, step 11: train_loss 0.02007; train_acc 1.00000
+epoch 45, step 12: train_loss 0.00008; train_acc 1.00000
+epoch 45, step 13: train_loss 0.00624; train_acc 1.00000
+epoch 45, step 14: train_loss 0.02362; train_acc 1.00000
+epoch 45, step 15: train_loss 0.01286; train_acc 1.00000
+epoch 45, step 16: train_loss 0.00070; train_acc 1.00000
+epoch 45, step 17: train_loss 0.02905; train_acc 1.00000
+epoch 45, step 18: train_loss 0.00039; train_acc 1.00000
+epoch 45, step 19: train_loss 0.00444; train_acc 1.00000
+epoch 45, step 20: train_loss 0.00046; train_acc 1.00000
+epoch 45, step 21: train_loss 0.00096; train_acc 1.00000
+epoch 45, step 22: train_loss 0.00781; train_acc 1.00000
+epoch 45, step 23: train_loss 0.16249; train_acc 0.87500
+epoch 45, step 24: train_loss 0.00090; train_acc 1.00000
+epoch 45, step 25: train_loss 0.03781; train_acc 1.00000
+epoch 45, step 26: train_loss 0.07203; train_acc 1.00000
+epoch 45, step 27: train_loss 0.00614; train_acc 1.00000
+epoch 45, step 28: train_loss 0.00296; train_acc 1.00000
+epoch 45, step 29: train_loss 0.00060; train_acc 1.00000
+epoch 45, step 30: train_loss 0.00151; train_acc 1.00000
+epoch 45, step 31: train_loss 0.06950; train_acc 1.00000
+epoch 45, step 32: train_loss 0.00030; train_acc 1.00000
+epoch 45, step 33: train_loss 0.01099; train_acc 1.00000
+epoch 45, step 34: train_loss 0.08725; train_acc 1.00000
+epoch 45, step 35: train_loss 0.00342; train_acc 1.00000
+epoch 45, step 36: train_loss 0.00035; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9154946803457775
+val overall acc. :  0.94308937
+val loss :  0.17726995361340414
+num_views 12
+epoch 46, step 1: train_loss 0.00666; train_acc 1.00000
+epoch 46, step 2: train_loss 0.01495; train_acc 1.00000
+epoch 46, step 3: train_loss 0.21766; train_acc 0.87500
+epoch 46, step 4: train_loss 0.00029; train_acc 1.00000
+epoch 46, step 5: train_loss 0.02863; train_acc 1.00000
+epoch 46, step 6: train_loss 0.00113; train_acc 1.00000
+epoch 46, step 7: train_loss 0.00102; train_acc 1.00000
+epoch 46, step 8: train_loss 0.01724; train_acc 1.00000
+epoch 46, step 9: train_loss 0.00807; train_acc 1.00000
+epoch 46, step 10: train_loss 0.00356; train_acc 1.00000
+epoch 46, step 11: train_loss 0.01366; train_acc 1.00000
+epoch 46, step 12: train_loss 0.02665; train_acc 1.00000
+epoch 46, step 13: train_loss 0.01699; train_acc 1.00000
+epoch 46, step 14: train_loss 0.06972; train_acc 1.00000
+epoch 46, step 15: train_loss 0.00145; train_acc 1.00000
+epoch 46, step 16: train_loss 0.00524; train_acc 1.00000
+epoch 46, step 17: train_loss 0.00795; train_acc 1.00000
+epoch 46, step 18: train_loss 0.00052; train_acc 1.00000
+epoch 46, step 19: train_loss 0.01281; train_acc 1.00000
+epoch 46, step 20: train_loss 0.09391; train_acc 1.00000
+epoch 46, step 21: train_loss 0.10619; train_acc 1.00000
+epoch 46, step 22: train_loss 0.00875; train_acc 1.00000
+epoch 46, step 23: train_loss 0.02446; train_acc 1.00000
+epoch 46, step 24: train_loss 0.00228; train_acc 1.00000
+epoch 46, step 25: train_loss 0.00484; train_acc 1.00000
+epoch 46, step 26: train_loss 0.00472; train_acc 1.00000
+epoch 46, step 27: train_loss 0.00026; train_acc 1.00000
+epoch 46, step 28: train_loss 0.02005; train_acc 1.00000
+epoch 46, step 29: train_loss 0.00128; train_acc 1.00000
+epoch 46, step 30: train_loss 0.34160; train_acc 0.87500
+epoch 46, step 31: train_loss 0.03040; train_acc 1.00000
+epoch 46, step 32: train_loss 0.00347; train_acc 1.00000
+epoch 46, step 33: train_loss 0.01893; train_acc 1.00000
+epoch 46, step 34: train_loss 0.02404; train_acc 1.00000
+epoch 46, step 35: train_loss 0.00331; train_acc 1.00000
+epoch 46, step 36: train_loss 0.03227; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9268583167094139
+val overall acc. :  0.9512195
+val loss :  0.1769653968513012
+num_views 12
+epoch 47, step 1: train_loss 0.00148; train_acc 1.00000
+epoch 47, step 2: train_loss 0.00342; train_acc 1.00000
+epoch 47, step 3: train_loss 0.02492; train_acc 1.00000
+epoch 47, step 4: train_loss 0.00197; train_acc 1.00000
+epoch 47, step 5: train_loss 0.00771; train_acc 1.00000
+epoch 47, step 6: train_loss 0.01738; train_acc 1.00000
+epoch 47, step 7: train_loss 0.05684; train_acc 1.00000
+epoch 47, step 8: train_loss 0.00512; train_acc 1.00000
+epoch 47, step 9: train_loss 0.00098; train_acc 1.00000
+epoch 47, step 10: train_loss 0.03848; train_acc 1.00000
+epoch 47, step 11: train_loss 0.00013; train_acc 1.00000
+epoch 47, step 12: train_loss 0.07487; train_acc 1.00000
+epoch 47, step 13: train_loss 0.00132; train_acc 1.00000
+epoch 47, step 14: train_loss 0.00098; train_acc 1.00000
+epoch 47, step 15: train_loss 0.02647; train_acc 1.00000
+epoch 47, step 16: train_loss 0.06021; train_acc 1.00000
+epoch 47, step 17: train_loss 0.03375; train_acc 1.00000
+epoch 47, step 18: train_loss 0.00493; train_acc 1.00000
+epoch 47, step 19: train_loss 0.00259; train_acc 1.00000
+epoch 47, step 20: train_loss 0.00144; train_acc 1.00000
+epoch 47, step 21: train_loss 0.00267; train_acc 1.00000
+epoch 47, step 22: train_loss 0.01401; train_acc 1.00000
+epoch 47, step 23: train_loss 0.07592; train_acc 1.00000
+epoch 47, step 24: train_loss 0.01227; train_acc 1.00000
+epoch 47, step 25: train_loss 0.01157; train_acc 1.00000
+epoch 47, step 26: train_loss 0.00917; train_acc 1.00000
+epoch 47, step 27: train_loss 0.01259; train_acc 1.00000
+epoch 47, step 28: train_loss 0.00112; train_acc 1.00000
+epoch 47, step 29: train_loss 0.00880; train_acc 1.00000
+epoch 47, step 30: train_loss 0.06474; train_acc 1.00000
+epoch 47, step 31: train_loss 0.00277; train_acc 1.00000
+epoch 47, step 32: train_loss 0.00582; train_acc 1.00000
+epoch 47, step 33: train_loss 0.01789; train_acc 1.00000
+epoch 47, step 34: train_loss 0.11948; train_acc 0.87500
+epoch 47, step 35: train_loss 0.00216; train_acc 1.00000
+epoch 47, step 36: train_loss 0.00165; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9319879832810867
+val overall acc. :  0.9512195
+val loss :  0.1678309167423322
+num_views 12
+epoch 48, step 1: train_loss 0.00656; train_acc 1.00000
+epoch 48, step 2: train_loss 0.00244; train_acc 1.00000
+epoch 48, step 3: train_loss 0.00801; train_acc 1.00000
+epoch 48, step 4: train_loss 0.01212; train_acc 1.00000
+epoch 48, step 5: train_loss 0.03660; train_acc 1.00000
+epoch 48, step 6: train_loss 0.01180; train_acc 1.00000
+epoch 48, step 7: train_loss 0.00047; train_acc 1.00000
+epoch 48, step 8: train_loss 0.01589; train_acc 1.00000
+epoch 48, step 9: train_loss 0.00165; train_acc 1.00000
+epoch 48, step 10: train_loss 0.16675; train_acc 0.87500
+epoch 48, step 11: train_loss 0.00254; train_acc 1.00000
+epoch 48, step 12: train_loss 0.01294; train_acc 1.00000
+epoch 48, step 13: train_loss 0.00309; train_acc 1.00000
+epoch 48, step 14: train_loss 0.00475; train_acc 1.00000
+epoch 48, step 15: train_loss 0.00337; train_acc 1.00000
+epoch 48, step 16: train_loss 0.00127; train_acc 1.00000
+epoch 48, step 17: train_loss 0.03169; train_acc 1.00000
+epoch 48, step 18: train_loss 0.00292; train_acc 1.00000
+epoch 48, step 19: train_loss 0.08232; train_acc 1.00000
+epoch 48, step 20: train_loss 0.13964; train_acc 0.87500
+epoch 48, step 21: train_loss 0.04036; train_acc 1.00000
+epoch 48, step 22: train_loss 0.00071; train_acc 1.00000
+epoch 48, step 23: train_loss 0.03400; train_acc 1.00000
+epoch 48, step 24: train_loss 0.00732; train_acc 1.00000
+epoch 48, step 25: train_loss 0.04785; train_acc 1.00000
+epoch 48, step 26: train_loss 0.01066; train_acc 1.00000
+epoch 48, step 27: train_loss 0.00377; train_acc 1.00000
+epoch 48, step 28: train_loss 0.01094; train_acc 1.00000
+epoch 48, step 29: train_loss 0.00444; train_acc 1.00000
+epoch 48, step 30: train_loss 0.00808; train_acc 1.00000
+epoch 48, step 31: train_loss 0.02478; train_acc 1.00000
+epoch 48, step 32: train_loss 0.00115; train_acc 1.00000
+epoch 48, step 33: train_loss 0.02066; train_acc 1.00000
+epoch 48, step 34: train_loss 0.05791; train_acc 1.00000
+epoch 48, step 35: train_loss 0.00106; train_acc 1.00000
+epoch 48, step 36: train_loss 0.00345; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.1674440409988165
+num_views 12
+epoch 49, step 1: train_loss 0.00380; train_acc 1.00000
+epoch 49, step 2: train_loss 0.01180; train_acc 1.00000
+epoch 49, step 3: train_loss 0.00674; train_acc 1.00000
+epoch 49, step 4: train_loss 0.05635; train_acc 1.00000
+epoch 49, step 5: train_loss 0.00079; train_acc 1.00000
+epoch 49, step 6: train_loss 0.00437; train_acc 1.00000
+epoch 49, step 7: train_loss 0.02187; train_acc 1.00000
+epoch 49, step 8: train_loss 0.02028; train_acc 1.00000
+epoch 49, step 9: train_loss 0.04157; train_acc 1.00000
+epoch 49, step 10: train_loss 0.00198; train_acc 1.00000
+epoch 49, step 11: train_loss 0.03052; train_acc 1.00000
+epoch 49, step 12: train_loss 0.00401; train_acc 1.00000
+epoch 49, step 13: train_loss 0.00077; train_acc 1.00000
+epoch 49, step 14: train_loss 0.00052; train_acc 1.00000
+epoch 49, step 15: train_loss 0.00120; train_acc 1.00000
+epoch 49, step 16: train_loss 0.00221; train_acc 1.00000
+epoch 49, step 17: train_loss 0.18042; train_acc 0.87500
+epoch 49, step 18: train_loss 0.01193; train_acc 1.00000
+epoch 49, step 19: train_loss 0.00969; train_acc 1.00000
+epoch 49, step 20: train_loss 0.01203; train_acc 1.00000
+epoch 49, step 21: train_loss 0.01816; train_acc 1.00000
+epoch 49, step 22: train_loss 0.00168; train_acc 1.00000
+epoch 49, step 23: train_loss 0.17212; train_acc 0.87500
+epoch 49, step 24: train_loss 0.01013; train_acc 1.00000
+epoch 49, step 25: train_loss 0.07485; train_acc 1.00000
+epoch 49, step 26: train_loss 0.00578; train_acc 1.00000
+epoch 49, step 27: train_loss 0.00063; train_acc 1.00000
+epoch 49, step 28: train_loss 0.00684; train_acc 1.00000
+epoch 49, step 29: train_loss 0.02535; train_acc 1.00000
+epoch 49, step 30: train_loss 0.00004; train_acc 1.00000
+epoch 49, step 31: train_loss 0.06490; train_acc 1.00000
+epoch 49, step 32: train_loss 0.00686; train_acc 1.00000
+epoch 49, step 33: train_loss 0.01283; train_acc 1.00000
+epoch 49, step 34: train_loss 0.00264; train_acc 1.00000
+epoch 49, step 35: train_loss 0.02840; train_acc 1.00000
+epoch 49, step 36: train_loss 0.01052; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.17478568976139286
+num_views 12
+epoch 50, step 1: train_loss 0.00128; train_acc 1.00000
+epoch 50, step 2: train_loss 0.00534; train_acc 1.00000
+epoch 50, step 3: train_loss 0.00341; train_acc 1.00000
+epoch 50, step 4: train_loss 0.09854; train_acc 1.00000
+epoch 50, step 5: train_loss 0.00682; train_acc 1.00000
+epoch 50, step 6: train_loss 0.00300; train_acc 1.00000
+epoch 50, step 7: train_loss 0.04757; train_acc 1.00000
+epoch 50, step 8: train_loss 0.00411; train_acc 1.00000
+epoch 50, step 9: train_loss 0.00004; train_acc 1.00000
+epoch 50, step 10: train_loss 0.01220; train_acc 1.00000
+epoch 50, step 11: train_loss 0.00279; train_acc 1.00000
+epoch 50, step 12: train_loss 0.20865; train_acc 0.87500
+epoch 50, step 13: train_loss 0.00218; train_acc 1.00000
+epoch 50, step 14: train_loss 0.02805; train_acc 1.00000
+epoch 50, step 15: train_loss 0.08132; train_acc 1.00000
+epoch 50, step 16: train_loss 0.01699; train_acc 1.00000
+epoch 50, step 17: train_loss 0.00461; train_acc 1.00000
+epoch 50, step 18: train_loss 0.00281; train_acc 1.00000
+epoch 50, step 19: train_loss 0.00129; train_acc 1.00000
+epoch 50, step 20: train_loss 0.02143; train_acc 1.00000
+epoch 50, step 21: train_loss 0.05193; train_acc 1.00000
+epoch 50, step 22: train_loss 0.01500; train_acc 1.00000
+epoch 50, step 23: train_loss 0.02502; train_acc 1.00000
+epoch 50, step 24: train_loss 0.00166; train_acc 1.00000
+epoch 50, step 25: train_loss 0.01103; train_acc 1.00000
+epoch 50, step 26: train_loss 0.00214; train_acc 1.00000
+epoch 50, step 27: train_loss 0.00960; train_acc 1.00000
+epoch 50, step 28: train_loss 0.00778; train_acc 1.00000
+epoch 50, step 29: train_loss 0.03865; train_acc 1.00000
+epoch 50, step 30: train_loss 0.01009; train_acc 1.00000
+epoch 50, step 31: train_loss 0.00104; train_acc 1.00000
+epoch 50, step 32: train_loss 0.00193; train_acc 1.00000
+epoch 50, step 33: train_loss 0.01694; train_acc 1.00000
+epoch 50, step 34: train_loss 0.00091; train_acc 1.00000
+epoch 50, step 35: train_loss 0.01228; train_acc 1.00000
+epoch 50, step 36: train_loss 0.01124; train_acc 1.00000
+Total # of test models:  123
+val mean class acc. :  0.9237235204711692
+val overall acc. :  0.94308937
+val loss :  0.16467479492212078

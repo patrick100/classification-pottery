@@ -1,0 +1,39 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <!--nomalization translation-->
+ <filter name="Transform: Move, Translate, Center">
+  <Param type="RichDynamicFloat" value="0" min="-508.878" name="axisX" max="508.878"/>
+  <Param type="RichDynamicFloat" value="0" min="-508.878" name="axisY" max="508.878"/>
+  <Param type="RichDynamicFloat" value="0" min="-508.878" name="axisZ" max="508.878"/>
+  <Param type="RichBool" value="true" name="centerFlag"/>
+  <Param type="RichBool" value="true" name="Freeze"/>
+  <Param type="RichBool" value="false" name="ToAll"/>
+ </filter>
+ <!--normalization scale-->
+ <filter name="Transform: Scale">
+  <Param type="RichDynamicFloat" value="1" min="0.1" name="axisX" max="10"/>
+  <Param type="RichDynamicFloat" value="1" min="0.1" name="axisY" max="10"/>
+  <Param type="RichDynamicFloat" value="1" min="0.1" name="axisZ" max="10"/>
+  <Param type="RichBool" value="true" name="uniformFlag"/>
+  <Param enum_val0="origin" enum_val1="barycenter" enum_cardinality="3" enum_val2="custom point" type="RichEnum" value="0" name="scaleCenter"/>
+  <Param x="0" y="0" z="0" type="RichPoint3f" name="customCenter"/>
+  <Param type="RichBool" value="true" name="unitFlag"/>
+  <Param type="RichBool" value="true" name="Freeze"/>
+  <Param type="RichBool" value="false" name="ToAll"/>
+ </filter>
+ <!--align-->
+ <filter name="Transform: Flip and/or swap axis">
+  <Param type="RichBool" value="false" name="flipX"/>
+  <Param type="RichBool" value="false" name="flipY"/>
+  <Param type="RichBool" value="false" name="flipZ"/>
+  <Param type="RichBool" value="false" name="swapXY"/>
+  <Param type="RichBool" value="true" name="swapXZ"/>
+  <Param type="RichBool" value="true" name="swapYZ"/>
+  <Param type="RichBool" value="true" name="Freeze"/>
+ </filter>
+ <filter name="Transform: Align to Principal Axis">
+  <Param type="RichBool" value="true" name="pointsFlag"/>
+  <Param type="RichBool" value="true" name="Freeze"/>
+  <Param type="RichBool" value="false" name="ToAll"/>
+ </filter>
+</FilterScript>
