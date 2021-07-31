@@ -1,39 +1,50 @@
 # Classification of ceramics using multi view geodesic farthest point sampling
 
-The Source-Codes were tested on Python 3.6.10 and PyTorch 1.3.1 using GeForce RTX 2080.
+The source codes were tested on Python 3.6.10 and PyTorch 1.3.1 using GeForce RTX 2080.
 
 <br/>
 
 First, download the datasets according to the method.
 
+- You can download the datasets from console installing gdown.
+    ```
+    pip install gdown
+    ```
+    ```
+    gdown https://drive.google.com/uc?id=1YifEa4A0eSKLZpp6fWbal-Go-4zvctth
+    ```
 <br/>
 <br/>
 
-## Pottery Dataset
+## Pottery Dataset 
+
+- [Download Pottery Dataset](https://drive.google.com/uc?id=1yBtEC_Bg_hjqMh-gCaJ-OCazV40fChbn)
 
 <p align="center"><img src="./Images/pottery_dataset.png" width =200px> </p>
 
 ### Multiview-dataset
-- [Normal](https://reactnative.dev)
-- [Curvature](https://reactnative.dev)
-- [Geodesic-max](https://reactnative.dev)
-- [Geodesic-min](https://reactnative.dev)
+- [Normal](https://drive.google.com/uc?id=1YifEa4A0eSKLZpp6fWbal-Go-4zvctth)
+- [Curvature](https://drive.google.com/uc?id=1-yieCwBhbM1Wms_rfToUDqt2ZsxW_iKI)
+- [Geodesic-max](https://drive.google.com/uc?id=1fgUrM-8dJud3C6U5aJeVYGcduY3yG4yk)
+- [Geodesic-min](https://drive.google.com/uc?id=1228-VudFVDHqs_TnslPt4mKkH31ifpHx)
 ### Point-Cloud-dataset
-- [Normalized](https://reactnative.dev)
-- [Non-Normalized](https://reactnative.dev)
+- [Normalized](https://drive.google.com/uc?id=1ZxgzWpwNQ1x78sgZD2oOlTdqKe8n0B84)
+- [Non-Normalized](https://drive.google.com/uc?id=1I3T4BZu06ohvguOzeMsebeNXUxXT0M0u)
 
 ## Peruvian Dataset (not available yet )
+
+- [Download Peruvian Dataset](https://drive.google.com/uc?id=)
 
 <p align="center"><img src="./Images/peruvian_dataset.png" width =300px> </p>
 
 ### Multiview-dataset
-- [Normal]()
-- [Curvature]()
-- [Geodesic-max]()
-- [Geodesic-min]()
+- [Normal](https://drive.google.com/uc?id=)
+- [Curvature](https://drive.google.com/uc?id=)
+- [Geodesic-max](https://drive.google.com/uc?id=)
+- [Geodesic-min](https://drive.google.com/uc?id=)
 ### Point-Cloud-dataset
-- [Normalized]()
-- [Non-Normalized]()
+- [Normalized](https://drive.google.com/uc?id=)
+- [Non-Normalized](https://drive.google.com/uc?id=)
 
 <br/>
 
