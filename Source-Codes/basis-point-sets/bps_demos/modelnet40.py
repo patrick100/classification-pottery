@@ -109,7 +109,7 @@ def load_modelnet40(root_data_dir):
     #data_dir = os.path.join(root_data_dir, 'pottery_normalized')
     data_dir = os.path.join(root_data_dir, 'peruvian_normalized')
     #data_dir = os.path.join(root_data_dir, 'peruvian_no_normalized')
-
+    """
     if not os.path.exists(data_dir):
 
         os.makedirs(data_dir)
@@ -117,7 +117,7 @@ def load_modelnet40(root_data_dir):
         modelnet40_url = "https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip"
 
         download_modelnet40_data(modelnet40_url, root_data_dir)
-
+    """
     train_file_lst = os.path.join(data_dir, "train_files.txt")
     test_file_lst = os.path.join(data_dir, "test_files.txt")
 
