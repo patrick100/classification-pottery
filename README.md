@@ -31,7 +31,7 @@ First, download the datasets according to the method.
 - [Normalized](https://drive.google.com/uc?id=1ZxgzWpwNQ1x78sgZD2oOlTdqKe8n0B84)
 - [Non-Normalized](https://drive.google.com/uc?id=1I3T4BZu06ohvguOzeMsebeNXUxXT0M0u)
 
-## Peruvian Dataset (not available yet )
+## Peruvian Dataset
 
 - [Download Peruvian Dataset](https://drive.google.com/uc?id=13bFdHO6R3Kbwa7roEhWcCuPkIPYD4b_m)
 
