@@ -33,18 +33,18 @@ First, download the datasets according to the method.
 
 ## Peruvian Dataset (not available yet )
 
-- [Download Peruvian Dataset](https://drive.google.com/uc?id=)
+- [Download Peruvian Dataset](https://drive.google.com/uc?id=13bFdHO6R3Kbwa7roEhWcCuPkIPYD4b_m)
 
 <p align="center"><img src="./Images/peruvian_dataset.png" width =300px> </p>
 
 ### Multiview-dataset
-- [Normal](https://drive.google.com/uc?id=)
-- [Curvature](https://drive.google.com/uc?id=)
-- [Geodesic-max](https://drive.google.com/uc?id=)
-- [Geodesic-min](https://drive.google.com/uc?id=)
+- [Normal](https://drive.google.com/uc?id=1wowscfqnn3OQPYZTQT79iT8Eip9e6M1M)
+- [Curvature](https://drive.google.com/uc?id=16m-ABOpgFUQcVxyVMahXyGrDtKWgj-wz)
+- [Geodesic-max](https://drive.google.com/uc?id=1jeQiu7QqUrpvOMd_kwMO-_qHuvMAePCl)
+- [Geodesic-min](https://drive.google.com/uc?id=1yoLZWes7vcz8ciu9_AmPLwiFhY-ZlChE)
 ### Point-Cloud-dataset
-- [Normalized](https://drive.google.com/uc?id=)
-- [Non-Normalized](https://drive.google.com/uc?id=)
+- [Normalized](https://drive.google.com/uc?id=1-CpSj3rlmeAu5pThnqZaNHy1x75UEThd)
+- [Non-Normalized](https://drive.google.com/uc?id=1nE9MsIzgKzy26jyx5Bnnv47HhfPeQa2F)
 
 <br/>
 
